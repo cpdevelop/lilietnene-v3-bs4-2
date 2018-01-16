@@ -1,0 +1,15 @@
+.btn {
+  font-size: .9rem;
+}
+
+.btn-light-extended {
+  color: #111;
+  background-color: #fbfbfb;
+  border-color: #fbfbfb;
+}
+
+.btn-light-extended:not([disabled]):not(.disabled):active,
+.btn-light-extended:not([disabled]):not(.disabled).active, .show >
+.btn-light-extended.dropdown-toggle {
+    // アクティブ状態のときのエフェクトを用意する
+}

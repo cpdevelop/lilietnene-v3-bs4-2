@@ -1,0 +1,19 @@
+.header {
+  z-index: 3;
+  
+  .info {
+    background-color: $l-snow;
+    color: $gray-700;
+    margin-bottom: 30px;
+    padding: .25rem 0;
+    font-size: .675rem
+  }
+
+  @media (max-width: 575px) {
+    .icon--logo {
+      width: 138px;
+      height: 34px;
+      background-position: 0 72.97297297297297%;
+    }
+  }
+} /*./header */

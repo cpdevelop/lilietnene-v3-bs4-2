@@ -1,0 +1,15 @@
+{
+    "pages": {
+        "index": {
+            "id": "index",
+            "title":"home",
+            "firstName":"John",
+            "lastName":"Watson"
+        },
+        "category": [
+            {"genre": "genre1", "item": "itemA"},
+            {"genre": "genre2", "item": "itemB"},
+            {"genre": "genre3", "item": "itemB"}
+        ]
+    }
+}
