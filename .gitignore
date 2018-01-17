@@ -1,4 +1,6 @@
 dist
 node_modules
 src/*.html
-note
+src/styles/*.css
+src/styles/*.map
+_note

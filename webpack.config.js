@@ -1,13 +1,16 @@
+/* eslint no-unused-vars: 0 */
 const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-// const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const VENDOR_LIBS = [
   'jquery',
-  'bootstrap'
+  'bootstrap',
+  'popper.js'
 ];
 
+// const publidDir = path.join(__dirname, '/src'); //テンプレート開発用
 const publidDir = path.join(__dirname, '/dist');
 
 module.exports = [
@@ -19,7 +22,7 @@ module.exports = [
     output: {
       path: publidDir,
       publicPath: '',
-      filename: '[name].[chunkhash].js'
+      filename: '[name].js' //'[name].[chunkhash].js'
     },
     module: {
       loaders: [
@@ -40,20 +43,17 @@ module.exports = [
       extensions: ['.js', '.jsx']
     },
     plugins: [
-      new webpack.optimize.CommonsChunkPlugin({
-        names: ['vendor', 'manifest']
-      }),
+      // new webpack.optimize.CommonsChunkPlugin({
+      //   names: ['vendor', 'manifest']
+      // }),
       new HtmlWebpackPlugin({
         template: 'src/index.html'
       })
     ]
   },
-];
-
-
   // {
   //   entry: {
-  //     style: './src/styles/index.scss'
+  //     style: './src/styles/app.scss'
   //   },
   //   output: {
   //     path: publidDir,
@@ -76,3 +76,4 @@ module.exports = [
   //     new ExtractTextPlugin('bundle.css'),
   //   ]
   // }
+];

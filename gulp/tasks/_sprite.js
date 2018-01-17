@@ -3,11 +3,11 @@ const svgSprite = require('gulp-svg-sprite');
 const rename = require('gulp-rename');
 const del = require('del');
 
-const svg = "src/assets/svg/original/*.svg"; // Original SVG
-const copiedDir = "src/assets/svg/original/sprite/";
-const generatedCss = "src/assets/svg/original/sprite/css/*.css";
-const copiedSvg = "src/assets/svg/original/sprite/css/*.svg";
-const destSvg = "src/assets/svg/copied";
+const svg = "lib/svg/*.svg"; // Original SVG
+const copiedDir = "lib/svg/sprite/";
+const generatedCss = "lib/svg/sprite/css/*.css";
+const copiedSvg = "lib/svg/sprite/css/*.svg";
+const destSvg = "src/assets/svg";
 const destCss = "src/styles/modules";
 
 const config = {
@@ -44,8 +44,8 @@ gulp.task('copySpriteCSS',['createSprite'],() => {
     .pipe(gulp.dest(destCss));
 });
 
-gulp.task('endClean',['copySpriteGraphic', 'copySpriteCSS'],() => {
+gulp.task('endClean', ['copySpriteGraphic', 'copySpriteCSS'],() => {
   return del(copiedDir);
 });
 
-gulp.task('icons');
+gulp.task('sprite');

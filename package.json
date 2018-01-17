@@ -20,19 +20,17 @@
     "delay": "2500"
   },
   "scripts": {
-    "gulp": "gulp",
-    "pregulp": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 src/styles/app.scss src/styles/app.css",
-    "compile": "gulp compileHtml:watch",
-    "svg": "gulp icon",
-    "clean": "rimraf dist",
-    "postclean": "mkdir dist",
-    "webpack": "concurrent \"rimraf dist/*js\" webpack",
-    "sass": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 src/styles/app.scss dist/styles/app.css",
-    "postsass": "postcss --config build/postcss.config.js --replace \"dist/styles/*.css\" \"!dist/styles/*.min.css\"",
-    "watch:server": "browser-sync start --server dist",
-    "watch:js": "nodemon --ignore templates/ --ignore data/ --ignore styles/ -e js -x \"npm run webpack\"",
-    "watch:sass": "nodemon --ignore templates/ --ignore data/ --ignore js/ -e sass -x \"npm run sass\"",
-    "watch": "concurrent \"npm run watch:js\" \"npm run watch:sass\" \"npm run watch:server\""
+    "clean": "rimraf \"dist\"",
+    "postclean": "mkdir \"dist\"",
+    "compile": "gulp compileHtml",
+    "splite": "gulp sprite",
+    "postsplite": "cpx \"src/**/*.svg\" \"dist\"",
+    "sass": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 \"src/styles/app.scss\" \"dist/bundle.css\"",
+    "postsass": "postcss --config build/postcss.config.js --replace \"dist/*.css\" \"!dist/*.min.css\"",
+    "webpack": "webpack",
+    "build": "concurrent \"npm run compile\" \"npm run splite\" \"npm run sass\" \"npm run webpack\"",
+    "watch:all": "nodemon --ignore data/ --ignore assets/ -e hbs,json,sass,js -x \"npm run build\"",
+    "serve": "browser-sync start --server --serveStatic dist --files 'dist/styles/*.css, dist/js/*.js, dist/*.html'"
   },
   "devDependencies": {
     "autoprefixer": "^7.2.5",
@@ -40,7 +38,10 @@
     "babel-loader": "^7.1.2",
     "babel-preset-es2015": "^6.24.1",
     "browser-sync": "^2.23.5",
+    "chokidar": "^2.0.0",
+    "chokidar-cli": "^1.2.0",
     "concurrently": "^3.5.1",
+    "cpx": "^1.5.0",
     "css-loader": "^0.28.8",
     "del": "^3.0.0",
     "eslint": "^4.15.0",
@@ -57,6 +58,7 @@
     "gulp-rename": "^1.2.2",
     "gulp-replace": "^0.6.1",
     "gulp-svg-sprite": "^1.3.7",
+    "gulp-webpack": "^1.5.0",
     "handlebars": "^4.0.11",
     "handlebars-loader": "^1.6.0",
     "html-loader": "^0.5.4",
@@ -71,7 +73,7 @@
     "sass-loader": "^6.0.6",
     "style-loader": "^0.19.1",
     "webpack": "^3.10.0",
-    "webpack-dev-server": "^2.10.1"
+    "webpack-dev-server": "^2.11.0"
   },
   "dependencies": {
     "bootstrap": "^4.0.0-beta.3",
