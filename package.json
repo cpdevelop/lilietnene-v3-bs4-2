@@ -20,16 +20,19 @@
     "delay": "2500"
   },
   "scripts": {
+    "json": "node build/json.js",
     "clean": "rimraf \"dist\"",
     "postclean": "mkdir \"dist\"",
-    "compile": "gulp compileHtml",
-    "splite": "gulp sprite",
-    "postsplite": "cpx \"src/**/*.svg\" \"dist\"",
+    "sprite": "gulp sprite",
+    "postsprite": "cpx \"src/**/*.svg\" \"dist\"",
+    "font": "cpx \"node_modules/font-awesome/fonts/{*.otf,*.eot,*.svg,*.ttf,*.woff,*.woff2}\" \"dist/assets/fonts\"",
     "sass": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 \"src/styles/app.scss\" \"dist/bundle.css\"",
     "postsass": "postcss --config build/postcss.config.js --replace \"dist/*.css\" \"!dist/*.min.css\"",
+    "images": "cpx \"src/**/*.jpg\" \"dist\"",
+    "compile": "gulp compileHtml",
     "webpack": "webpack",
-    "build": "concurrent \"npm run compile\" \"npm run splite\" \"npm run sass\" \"npm run webpack\"",
-    "watch:all": "nodemon --ignore data/ --ignore assets/ -e hbs,json,sass,js -x \"npm run build\"",
+    "b": "concurrent \"npm run compile\" \"npm run webpack\"",
+    "watch": "nodemon --ignore data/ --ignore assets/ -e hbs,json,sass,js -x \"npm run build\"",
     "serve": "browser-sync start --server --serveStatic dist --files 'dist/styles/*.css, dist/js/*.js, dist/*.html'"
   },
   "devDependencies": {
@@ -77,6 +80,7 @@
   },
   "dependencies": {
     "bootstrap": "^4.0.0-beta.3",
+    "font-awesome": "^4.7.0",
     "jquery": "^3.2.1",
     "popper.js": "^1.12.9"
   }

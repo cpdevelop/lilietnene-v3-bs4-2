@@ -1,0 +1,11 @@
+<div id="brand" class="grid">
+  <h2 class="grid__lead">BRANDS</h2>
+  <div class="row">
+    {{#each index.brands}}
+      <div class="col-lg-2 col-md-4 col-6 grid__item">
+        <a href="{{url}}"><img class="img-fluid mx-auto" src="{{img}}" alt="{{name}}"></a>
+      </div>
+    {{/each}}
+    <p class="grid__link"><a href="#" class="btn-link">取り扱いブランド一覧へ</a></p>
+  </div>
+</div>

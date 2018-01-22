@@ -1,0 +1,45 @@
+.footer {
+  text-align: left;
+  background-color:$secondary;
+  margin-top: 80px;
+  padding: 40px 1rem;
+
+  address {
+    margin-bottom: 0;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    line-height: 2.2;
+  }
+
+  &__lead {
+    font-size: 1rem;
+    margin: 1rem 0;
+    letter-spacing: .1rem;
+  }
+
+  .payments {
+
+    &__item {
+      width: 3rem;
+
+      img {
+        mix-blend-mode: multiply;
+      }
+    }
+  }
+
+  @media (min-width: 992px) {
+    .payments {
+      text-align: right;
+
+      &__item {
+        margin-left: 1.25rem;
+      }
+    }
+  }
+
+
+}

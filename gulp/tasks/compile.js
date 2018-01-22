@@ -8,10 +8,14 @@ const replace = require('gulp-replace');
 
 gulp.task('compileHtml', () => {
 	const templateData = {
-	},
+		},
 	options = {
 			batch : [config.templatePartialPath],
-			// helpers : 'file_path'
+			helpers : {
+            // capitals : (str) => {
+            //     return str.toUpperCase();
+            // }
+        }
 		};
 
 	return gulp.src(['src/templates/*.page.hbs'])
@@ -25,10 +29,6 @@ gulp.task('compileHtml', () => {
 });
 
 // gulp.task('compileHtml');
-
-// gulp.task('compileHtml:watch', () => {
-//     return gulp.watch([config.templates,config.dataPath], ['compileHtml']);
-// });
 
 //
 // http://www.timcodes.net/blog/2017/1/22/front-end-templates

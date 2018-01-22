@@ -1,15 +1,76 @@
 {
-    "pages": {
-        "index": {
-            "id": "index",
-            "title":"home",
-            "firstName":"John",
-            "lastName":"Watson"
+  "index": {
+    "arrivals": [
+        {
+            "category": "NEW",
+            "update": "2018.1.1",
+            "summary": "Upon yielding, kind sea subdue very seed sixth them.",
+            "img": "http://via.placeholder.com/400x400",
+            "url": "#",
+            "alt": ""
         },
-        "category": [
-            {"genre": "genre1", "item": "itemA"},
-            {"genre": "genre2", "item": "itemB"},
-            {"genre": "genre3", "item": "itemB"}
-        ]
-    }
+        {
+            "category": "NEW",
+            "update": "2018.1.2",
+            "summary": "Upon yielding, kind sea subdue very seed sixth them.",
+            "img": "http://via.placeholder.com/400x400",
+            "url": "#",
+            "alt": ""
+        },
+        {
+            "category": "NEW",
+            "update": "2018.1.3",
+            "summary": "Upon yielding, kind sea subdue very seed sixth them.",
+            "img": "http://via.placeholder.com/400x400",
+            "url": "#",
+            "alt": ""
+        },
+        {
+            "category": "NEW",
+            "update": "2018.1.4",
+            "summary": "Upon yielding, kind sea subdue very seed sixth them.",
+            "img": "http://via.placeholder.com/400x400",
+            "url": "#",
+            "alt": ""
+        }
+    ],
+    "brands": [
+        {
+            "name": "Brandname A",
+            "url": "#",
+            "img": "http://via.placeholder.com/400x400",
+            "alt": ""
+        },
+        {
+            "name": "Brandname B",
+            "url": "#",
+            "img": "http://via.placeholder.com/400x400",
+            "alt": ""
+        },
+        {
+            "name": "Brandname C",
+            "url": "#",
+            "img": "http://via.placeholder.com/400x400",
+            "alt": ""
+        },
+        {
+            "name": "Brandname D",
+            "url": "#",
+            "img": "http://via.placeholder.com/400x400",
+            "alt": ""
+        },
+        {
+            "name": "Brandname E",
+            "url": "#",
+            "img": "http://via.placeholder.com/400x400",
+            "alt": ""
+        },
+        {
+            "name": "Brandname F",
+            "url": "#",
+            "img": "http://via.placeholder.com/400x400",
+            "alt": ""
+        }
+    ]
+  }
 }

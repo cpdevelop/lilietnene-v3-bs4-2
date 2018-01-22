@@ -16,7 +16,7 @@ const config = {
       sprite:'sprite.svg',
       render:{
         css:{
-          template:'./gulp/_sprite.css'
+          template:'./gulp/sprite.css'
         }
       }
     }
@@ -27,25 +27,25 @@ gulp.task('beginClean', () =>  {
     return del([copiedDir,destSvg]);
 });
 
-gulp.task('createSprite',['beginClean'],() => {
+gulp.task('createSprite',['beginClean'],() => {//
     return gulp.src(svg)
       .pipe(svgSprite(config))
       .pipe(gulp.dest(copiedDir));
 });
 
-gulp.task('copySpriteGraphic',['createSprite'],() => {
+gulp.task('copySpriteGraphic',['createSprite'],() => {//
     return gulp.src(copiedSvg)
       .pipe(gulp.dest(destSvg));
 });
 
-gulp.task('copySpriteCSS',['createSprite'],() => {
+gulp.task('copySpriteCSS',['createSprite'],() => {//
   return gulp.src(generatedCss)
     .pipe(rename('_sprite.scss'))
     .pipe(gulp.dest(destCss));
 });
 
-gulp.task('endClean', ['copySpriteGraphic', 'copySpriteCSS'],() => {
-  return del(copiedDir);
+gulp.task('endClean',['copySpriteGraphic', 'copySpriteCSS'], () => {//
+  return del('lib/svg/sprite');
 });
 
 gulp.task('sprite');

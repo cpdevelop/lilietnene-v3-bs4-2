@@ -1,0 +1,77 @@
+{
+    "index": {
+      "arrival" : [
+            {
+              "category" : "NEW",
+              "update" : "2018.1.1",
+              "summary" : "Upon yielding, kind sea subdue very seed sixth them.",
+              "img" : "http://via.placeholder.com/400x400",
+              "url": "#",
+              "alt": ""
+            },
+            {
+              "category" : "NEW",
+              "update" : "2018.1.2",
+              "summary" : "Upon yielding, kind sea subdue very seed sixth them.",
+              "img" : "http://via.placeholder.com/400x400",
+              "url": "#",
+              "alt": ""
+            },
+            {
+              "category" : "NEW",
+              "update" : "2018.1.3",
+              "summary" : "Upon yielding, kind sea subdue very seed sixth them.",
+              "img" : "http://via.placeholder.com/400x400",
+              "url": "#",
+              "alt": ""
+            },
+            {
+              "category" : "NEW",
+              "update" : "2018.1.4",
+              "summary" : "Upon yielding, kind sea subdue very seed sixth them.",
+              "img" : "http://via.placeholder.com/400x400",
+              "url": "#",
+              "alt": ""
+            }
+        ]
+    },
+    "pages": {
+      "categrys" : [
+
+      ],
+      "brands" : [
+            {
+              "category" : "baby",
+              "name" : "brandA",
+              "summary" : "Upon yielding, kind sea subdue very seed sixth them.",
+              "img" : "http://via.placeholder.com/400x400",
+              "url": "#",
+              "alt": ""
+            },
+            {
+              "category" : "baby",
+              "name" : "brandB",
+              "summary" : "Upon yielding, kind sea subdue very seed sixth them.",
+              "img" : "http://via.placeholder.com/400x400",
+              "url": "#",
+              "alt": ""
+            },
+            {
+              "category" : "baby",
+              "name" : "brandC",
+              "summary" : "Upon yielding, kind sea subdue very seed sixth them.",
+              "img" : "http://via.placeholder.com/400x400",
+              "url": "#",
+              "alt": ""
+            },
+            {
+              "category" : "kids",
+              "name" : "brandA",
+              "summary" : "Upon yielding, kind sea subdue very seed sixth them.",
+              "img" : "http://via.placeholder.com/400x400",
+              "url": "#",
+              "alt": ""
+            }
+        ]
+    }
+}

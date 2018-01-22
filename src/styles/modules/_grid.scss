@@ -1,0 +1,64 @@
+.update {
+  margin-top: 1rem;
+  color: $primary;
+}
+
+.grid {
+  margin-top: 80px;
+
+  p {
+      line-height: 1.2;
+      margin-top: 1rem;
+  }
+
+  .update {
+    margin-top: 1rem;
+    margin-bottom: -.5rem;
+  }
+
+  &__lead {
+      text-align: center;
+      font-size: 1.5rem;
+      letter-spacing: .15rem;
+      margin-bottom: 2rem;
+  }
+
+  &__item {
+    position: relative;
+    margin-bottom: 1rem;
+  }
+
+  &__badge {
+    position: absolute;
+  }
+
+  &__link {
+    width: 100%;
+    text-align: center;
+    display: block;
+    a {
+      font-size: 1rem;
+      padding-bottom: .5rem;
+      border-bottom: 1px solid lighten($primary, 5%);
+    }
+    a:hover {
+      text-decoration: none;
+      border-bottom: 1px solid lighten($primary, 20%);
+    }
+  }
+}
+
+.grid__extension{
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+    p {
+      line-height: inherit;
+    }
+
+    .text-muted {
+      font-size: .75rem;
+      color: #968e8b !important;
+    }
+}

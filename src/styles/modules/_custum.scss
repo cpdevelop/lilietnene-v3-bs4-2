@@ -44,7 +44,6 @@ $theme-colors: map-merge((
 ), $theme-colors);
 // stylelint-enable
 
-
 // font
 // stylelint-disable value-keyword-case
 $font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "lato", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -53,7 +52,6 @@ $font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "lato", Arial, 
 $font-size-base:              .9rem; // Assumes the browser default, typically `16px`
 $font-size-lg:                ($font-size-base * 1.25);
 $font-size-sm:                ($font-size-base * .875);
-
 $line-height-base:            1.875;
 $text-muted:                  $gray-600;
 
@@ -64,4 +62,26 @@ $text-muted:                  $gray-600;
 
 $link-color:                $primary; /*theme-color("primary")*/
 $link-hover-color:          lighten($primary, 20%); /*darken($link-color, 15%)*/
-$link-hover-decoration:     underline;
+$link-hover-decoration:     none;
+a { padding: .75rem 0; }
+
+// badge
+$badge-padding-y:.4rem;
+$badge-padding-x:.5rem;
+$badge-font-size:.5rem;
+$badge-font-weight:400;
+$badge-border-radius:0;
+.badge {
+  letter-spacing: .1rem;
+}
+
+
+// button
+$btn-padding-y:.5rem;
+$btn-padding-x:1rem;
+$btn-border-radius:0;
+.btn {
+    font-size: 0.8rem;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+}

@@ -16,6 +16,14 @@
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
+
+// ///////////////////////////////////
+// font-awesome icons from node-modules
+// ///////////////////////////////////
+
+$fa-font-path:        "assets/fonts";
+@import "../../node_modules/font-awesome/scss/font-awesome.scss";
+
 // ///////////////////////////////////
 // Additional StyleSheets
 // ///////////////////////////////////
@@ -27,12 +35,14 @@
 
 // Block
 @import "modules/header";
+@import "modules/footer";
 @import "modules/toolbar";
 @import "modules/menu";
 @import "modules/contents";
+@import "modules/grid";
 
 // Modules & Effects
-@import "modules/sprites";
+@import "modules/sprite";
 @import "modules/buttons";
 @import "modules/search";
 @import "modules/animation";

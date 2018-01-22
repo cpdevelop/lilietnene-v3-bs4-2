@@ -8,10 +8,15 @@
 <body>
   <div class="row-offcanvas row-offcanvas-left">
     {{>header}}
-      <div class="contents_wrpper">
-        {{>carousel}}
-        {{>menu}}
-      </div>
+    {{>carousel}}
+      <div class="container">
+        {{>arrival}}
+        {{>collection}}
+        {{>newin}}
+        {{>brand}}
+        {{>blog}}
+        {{>about}}
+      </div><!-- ./container -->
     {{>footer}}
     {{>offcanvas}}
   </div><!--/.row-offcanvas-->

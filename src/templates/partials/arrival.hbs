@@ -1,0 +1,13 @@
+<div id="arrival" class="grid">
+  <h2 class="grid__lead">WHAT'S NEW!</h2>
+  <div class="row">
+    {{#each index.arrivals}}
+      <div class="col-lg-3 col-6 grid__item">
+        <span class="badge badge-dark grid__badge">{{category}}</span>
+        <a href="{{url}}"><img class="img-fluid mx-auto" src="{{img}}" alt="{{alt}}"></a>
+        <p class="update"><a href="{{url}}">{{update}}</a></p>
+        <p>{{summary}}</p>
+      </div>
+    {{/each}}
+  </div>
+</div>
