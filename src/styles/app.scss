@@ -40,9 +40,15 @@ $fa-font-path:        "assets/fonts";
 @import "modules/menu";
 @import "modules/contents";
 @import "modules/grid";
+@import "modules/tab";
 
-// Modules & Effects
+// Modules & Parts
 @import "modules/sprite";
 @import "modules/buttons";
+@import "modules/title";
 @import "modules/search";
+
+// Effects
 @import "modules/animation";
+@import "modules/filter";
+@import "modules/rotatebox";

@@ -28,10 +28,10 @@
     "font": "cpx \"node_modules/font-awesome/fonts/{*.otf,*.eot,*.svg,*.ttf,*.woff,*.woff2}\" \"dist/assets/fonts\"",
     "sass": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 \"src/styles/app.scss\" \"dist/bundle.css\"",
     "postsass": "postcss --config build/postcss.config.js --replace \"dist/*.css\" \"!dist/*.min.css\"",
-    "images": "cpx \"src/**/*.jpg\" \"dist\"",
-    "compile": "gulp compileHtml",
-    "webpack": "webpack",
-    "b": "concurrent \"npm run compile\" \"npm run webpack\"",
+    "images": "cpx \"src/**/{*jpe?g,*.jpg,*.gif,*.png}\" \"dist\"",
+    "c": "gulp compileHtml",
+    "w": "webpack",
+    "b": "concurrent \"npm run c\" \"npm run w\"",
     "watch": "nodemon --ignore data/ --ignore assets/ -e hbs,json,sass,js -x \"npm run build\"",
     "serve": "browser-sync start --server --serveStatic dist --files 'dist/styles/*.css, dist/js/*.js, dist/*.html'"
   },
@@ -75,6 +75,7 @@
     "rimraf": "^2.6.2",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.19.1",
+    "url-loader": "^0.6.2",
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.11.0"
   },

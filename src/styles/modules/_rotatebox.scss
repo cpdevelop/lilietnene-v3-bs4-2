@@ -1,0 +1,121 @@
+.card {
+    border: none !important;
+    box-shadow: 0px 0px 40px -2px rgba(106,111,138,0.3);
+    margin: 1rem 0;
+
+    h5 {
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: .075rem;
+      margin-bottom: 0;
+    }
+
+    small {
+      font-size: 0.6rem;
+      color: $gray-700;
+      margin-bottom: 1rem;
+    }
+
+    &__data {
+      margin-top: 1rem;
+    }
+
+    &__category {
+      font-size: 0.8rem;
+      margin-right: .75rem;
+    }
+
+    &__tag {
+      font-size: 70%;
+      letter-spacing: .05rem;
+      color: $gray-800;
+      background-color: $secondary;
+      border-radius: .2rem;
+      padding: .25rem .4rem;
+      line-height: 1;
+      margin-right: .25rem;
+    }
+
+    &__desc {
+      font-size: 0.8rem;
+    }
+}
+.card-body {
+    padding: 1.5rem 1.5rem 0.75rem !important;
+}
+
+@media screen and (min-width: 992px) {
+  .rotatebox {
+    perspective: 1500rem;
+    position: relative;
+    height: 24.4rem;
+    margin: 1rem 0;
+
+    &__side {
+      background-color: #fff;
+      height: inherit;
+      transition: all .8s;
+      position: absolute;
+      top:0;
+      left: 0;
+      width: 100%;
+      backface-visibility:hidden;
+
+      &--front {
+        background-color: #fff;
+      }
+
+      &--back {
+        background-color: $gray-700;
+        transform: rotateY(180deg);
+
+        h5 {
+          color: #fff !important;
+          font-size: 1rem;
+          font-weight: 400;
+        }
+
+        small {
+          color: #fff !important;
+          color: #fff;
+          margin-bottom: 1rem;
+        }
+
+        p {
+          color: #fff !important;
+        }
+
+        .btn {
+          position: absolute;
+          bottom: 1.5rem;
+          left: 50%;
+          transform: translateX(-50%);
+          color: $gray-800;
+        }
+
+        .card__desc {
+          margin-top: 1.5rem;
+        }
+
+      }
+    }
+    &:hover &__side--front {
+      transform: rotateY(180deg);
+    }
+
+    &:hover &__side--back {
+      transform: rotateY(0);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .card__category {
+      font-size: 0.7rem;
+      margin-right: .3rem;
+  }
+  .card__tag {
+      letter-spacing: 0;
+      margin-right: 0.1rem;
+    }
+}

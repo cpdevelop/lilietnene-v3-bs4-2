@@ -1,0 +1,29 @@
+<div id="myCarousel" class="carousel slide contents_wrpper" data-ride="carousel">
+			<ol class="carousel-indicators">
+        {{#each index.carousel}}
+          <li data-target="#myCarousel" data-slide-to="{{indicators-id}}" class="{{class}}"></li>
+        {{/each}}
+			</ol>
+    			<div class="carousel-inner">
+            {{#each index.carousel}}
+              <div class="carousel-item {{class}}">
+                <img class="{{count}}" src="{{img}}" alt="{{alt}}" data-src="{{data-src}}" data-holder-rendered="true">
+                <div class="container">
+                  <div class="carousel-caption">
+                    <h1>{{title}}</h1>
+                    <p>{{summary}}</p>
+                    <p><a class="btn btn-light-extended" href="{{url}}" role="button">VIEW MORE</a></p>
+                  </div>
+                </div>
+              </div>
+            {{/each}}
+    			</div>
+			<a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">前へ</span>
+			</a>
+			<a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">次へ</span>
+			</a>
+</div>

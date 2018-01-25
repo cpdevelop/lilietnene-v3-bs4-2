@@ -1,0 +1,32 @@
+<p class="alertbox alert-light">お探しのジャンルのブランドはありませんでした</p>
+<div id="brands">
+  <div class="row">
+    {{#each brands.index}}
+      <div class="col-lg-3 col-md-4 col-12 boxes {{alphabetical-order}} {{targets}}">
+        <div class="rotatebox">
+          <div class="card rotatebox__side rotatebox__side--front">
+            <img class="card-img-top" src="http://via.placeholder.com/400x400" alt="{{alt}}">
+            <div class="card-body">
+              <h5 class="card-title">{{name}}</h5>
+              <small>{{kana}}</small>
+              <p class="card__data">
+                <span class="card__category">{{category}}</span>
+                {{#if target1}}<span class="card__tag">{{target1}}</span>{{/if}}
+                {{#if target2}}<span class="card__tag">{{target2}}</span>{{/if}}
+                {{#if target3}}<span class="card__tag">{{target3}}</span>{{/if}}
+              </p>
+            </div>
+          </div>
+          <div class="card rotatebox__side rotatebox__side--back d-none d-lg-block">
+            <div class="card-body">
+              <h5 class="card-title">{{name}}</h5>
+              <small>{{kana}}</small>
+              <p class="card__desc">{{description}}</p>
+              <p><a class="btn btn-light-extended" href="{{url}}" role="button">VIEW MORE</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</div>

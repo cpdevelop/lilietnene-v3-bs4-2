@@ -2,13 +2,23 @@
 <html lang="ja" dir="ltr">
 <head>
     <meta charset="utf-8" />
-    <title>ホーム</title>
-    {{>meta}}
+    <title>LiLi et NeNe - BRANDS</title>
+    {{>common-meta}}
 </head>
 <body>
+  <div class="row-offcanvas row-offcanvas-left">
+    {{>common-header}}
       <div class="container">
-        {{>test}}
+        <h1 class="page__title">
+          BRAND LIST
+          <small class="text-muted">取扱いブランド一覧</small>
+        </h1>
+        {{>brands-tab}}
+        {{>brands-index}}
       </div><!-- ./container -->
+    {{>common-footer}}
+    {{>common-offcanvas}}
+  </div><!--/.row-offcanvas-->
 </body>
 
 </html>

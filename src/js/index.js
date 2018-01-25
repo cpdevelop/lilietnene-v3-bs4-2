@@ -8,9 +8,7 @@
 /////////////////////////////////////////////
 
 import Offcanvas from './modules/Offcanvas';
-import Accordion from './modules/Accordion';
+import Filter from './modules/Filter';
 
 new Offcanvas();
-new Accordion();
-
-//console.log("From Index");
+new Filter();

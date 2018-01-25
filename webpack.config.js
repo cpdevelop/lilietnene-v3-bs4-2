@@ -37,7 +37,18 @@ module.exports = [
           test: /\.html/,
           loader: require.resolve('html-loader')
         }
-      ]
+      ],
+      rules: [{
+            test: /\.(jpe?g|png|gif|svg|ico)(\?.+)?$/,
+            use: {
+                loader: 'url-loader',
+                options: {
+                    limit: 8192,
+                    name: './src/assets/images/[name].[ext]',
+                    outputPath: 'assets/images/'
+                }
+            }
+        }]
     },
     resolve: {
       extensions: ['.js', '.jsx']
@@ -48,32 +59,11 @@ module.exports = [
       // }),
       new HtmlWebpackPlugin({
         template: 'src/index.html'
-      })
+      }),
+      new HtmlWebpackPlugin({
+        filename: 'brands.html',
+        template: 'src/brands.html'
+    }),
     ]
-  },
-  // {
-  //   entry: {
-  //     style: './src/styles/app.scss'
-  //   },
-  //   output: {
-  //     path: publidDir,
-  //     publicPath: '/',
-  //     filename: 'bundle.css'
-  //   },
-  //   module: {
-  //     loaders: [
-  //       {
-  //         test: /\.css$/,
-  //         loader: ExtractTextPlugin.extract({ fallback: 'style-loader', use: 'css-loader' })
-  //       },
-  //       {
-  //         test: /\.scss$/,
-  //         loader: ExtractTextPlugin.extract({ fallback: 'style-loader', use: 'css-loader!sass-loader' })
-  //       }
-  //     ]
-  //   },
-  //   plugins: [
-  //     new ExtractTextPlugin('bundle.css'),
-  //   ]
-  // }
+  }
 ];
