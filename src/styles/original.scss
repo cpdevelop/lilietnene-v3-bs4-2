@@ -1,0 +1,269 @@
+// ///////////////////////////////////
+// Bootstrap Variable Customize
+// ///////////////////////////////////
+
+@import "modules/custum";
+
+// ///////////////////////////////////
+// Include Bootstrap
+// ///////////////////////////////////
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// ///////////////////////////////////
+// Additional StyleSheets
+// ///////////////////////////////////
+
+// Function
+@import "modules/offcanvas";
+@import "modules/accordion";
+
+// Block
+@import "modules/header";
+@import "modules/footer";
+@import "modules/toolbar";
+@import "modules/menu";
+
+// Modules & Parts
+@import "modules/sprite";
+@import "modules/buttons";
+@import "modules/search";
+
+// Effects
+@import "modules/animation";
+
+
+// for future-shop
+
+.FS2_trial, .FS2_preview {
+  display: none;
+}
+.row-offcanvas {
+  min-height: 100vh;
+}
+.layout_table {
+  margin: 0 auto;
+}
+@media (min-width: 576px) {
+  .layout_table {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .layout_table {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .layout_table {
+    max-width: 960px;
+  }
+  .system_content > form {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+}
+@media (min-width: 1200px) {
+  .layout_table {
+    max-width: 1140px;
+  }
+  .system_content > form {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+/* ************************** */
+
+.pageTitle {
+    text-align: center;
+    margin: 6rem 0 3rem;
+    letter-spacing: 0.1rem;
+    font-size: 1.35rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+}
+
+.CrossHead {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+
+/* ************************** */
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"]{
+    padding: .5rem .75rem !important;
+    text-indent: .25rem;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: .5rem;
+    border-width: 1px;
+    border-color: #ebe9e7;
+    border-image: initial;
+    border-radius: .25rem;
+}
+
+select {
+  padding: .5rem .75rem !important;
+  border-color: #ebe9e7;
+  margin: .5rem;
+  border-radius: .25rem;
+}
+
+label {
+    margin-right: 1.5rem;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right: .5rem;
+}
+
+.FS2_assist_required {
+    background: #fffbf0;
+}
+
+/* ************************** */
+.cartTable {
+    border: 1px solid #ebe9e7;
+    width: 90%;
+    margin:0 5% 1rem;
+}
+.cartTable th,
+.cartTable td {
+  border: 1px solid #ebe9e7;
+  padding: 1rem;
+}
+.cartTable thead th,
+.cartTable thead td {
+  border-bottom-width: 1px;
+}
+.FS2_total_area {
+  margin-right: 5%;
+}
+
+/* ************************** */
+.FS2_breadcrumbs {
+  margin: 1.5rem 0;
+  font-weight: 400;
+}
+.FS2_breadcrumbs a {
+  font-weight: 600;
+}
+.FS2_breadcrumbs:after {
+    content: "";
+    clear: both;
+    height: 0;
+    display: block;
+    visibility: hidden;
+}
+
+.system_content > form {
+
+  .pageTitle {
+    margin: 3rem 0 1.5rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 1.5rem 0 1rem;
+  }
+
+  h4 {
+    font-size: .9rem;
+    font-weight: 600;
+    margin: 1rem 0 1rem;
+  }
+
+  table {
+    border: 1px solid #ebe9e7;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  table th,
+  table td {
+    border: 1px solid #ebe9e7;
+    padding: 1rem;
+  }
+
+  table thead th,
+  table thead td {
+    border-bottom-width: 1px;
+  }
+}
+
+.alignItem_03 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.FS2_bottom_btn_center_1,
+.FS2_bottom_btn_info {
+  text-align: center;
+}
+.FS2_bottom_btn_center_1 input[type="image"],
+.alignRight input[type="image"],
+.FS2_bottom_btn_left_2 input[type="image"],
+#entryForm > div.itemCenter input[type="image"]{
+  margin-top:1rem;
+  width: 345px;
+}
+.FS2_bottom_btn_info input[type="image"]{
+  margin-top:1rem;
+  width: 225px;
+}
+#form > table > tbody > tr > td.FS2_login_layout_table_td_right > div.FS2_Login_btn_position > a img {
+}
+.alignRight input[type="image"],.FS2_bottom_btn_left_2 input[type="image"]{
+  width: 225px;
+}
+#form > table > tbody > tr > td.FS2_login_layout_table_td_right > div.FS2_Login_btn_position > a {
+  display:inline-block; margin-left:auto; margin-right:auto;
+}
+#form > table > tbody > tr > td.FS2_login_layout_table_td_right > div.FS2_Login_btn_position > a img {
+  width:100%;
+}
+div.FS2_bottom_btn_info > a > img,#form > .FS2_bottom_btn_center_1 > a > img {
+  margin-top:1rem;
+  width: 225px;
+}
+.FS2_bottom_btn_info input[type="image"]{
+  width: 340px;
+}
+
+/* ************************** */
+
+#login,
+#entry,
+#wishListLogin,
+.FS2_login_layout_table_td_right > div > input[type="image"],
+.FS2_login_layout_table_td_right > div.FS2_Login_btn_position > a > img {
+  width: 340px;
+}
+
+.FS2_login_layout_table_td_right,
+.FS2_login_layout_table_td_left {
+  padding: 2rem !important;
+  border: none !important;
+}
+
+.FS2_login_layout_table_td_left > div > div,
+.FS2_Login_btn_position {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.FS2_login_layout_table_td_left > div > table > caption {
+  display: none;
+}

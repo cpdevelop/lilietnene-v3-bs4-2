@@ -1,0 +1,36 @@
+<style>
+div.system_content > blockquote{border-left:none; margin:0; padding:0; text-align:center;}
+.note{ margin-top: 2em; font-size: 12px; line-height: 2; background: #f6f6f6; padding: 3em; text-align: left;}
+
+.orderFlow{ display:none;}
+.flow{ font-size:.75em; line-height:1.2; display: flex; justify-content: center; margin-top: 30px; position: relative; list-style:none;}
+.flow li{ text-align:center; width:9em; margin: 0 1em; z-index: 10;}
+.flow li .mark{ display:block; width:4em; height:4em; margin:0 2em .75em; background-color:#fff; border:#f0ebe6 3px solid; border-radius: 30px; text-align: center; line-height: 2.75;}
+.flow .line{background-color: #f5f5f5; width: 41em; height: .25em; position: absolute; top: 2em; z-index: 0;}
+.flow.step1 li .mark::after{ font-size: 1.5em;}
+
+.flow.step1 li:nth-of-type(1) .mark,
+.flow.step1 li:nth-of-type(2) .mark,
+.flow.step1 li:nth-of-type(3) .mark,
+.flow.step1 li:nth-of-type(4) .mark{ background:#ddd2c7; border:none;}
+.flow.step1 li:nth-of-type(1) .mark::after,
+.flow.step1 li:nth-of-type(2) .mark::after,
+.flow.step1 li:nth-of-type(3) .mark::after,
+.flow.step1 li:nth-of-type(4) .mark::after{ content: ""; display: block; width: 4em; height: 4em; background: url(https://secure2.future-shop.jp/~baby/svg/check.svg) no-repeat 25% 30%; background-size: 25%; }
+.flow.step1 li:nth-of-type(5) .mark{ background:#666666; border:none;}
+.flow.step1 li:nth-of-type(5) .mark::after{ content: "5"; color: #fff;}
+
+/* 注文完了 */
+.FS2_MessageContents_container{ background: #f9f9f9; padding: 20px; margin-bottom:30px;}
+</style>
+
+<div class="CS_orderFlow">
+<ul class="flow step1">
+<span class="line"></span>
+<li><span class="mark"></span><p>お客様情報入力</p></li>
+<li><span class="mark"></span><p>お届け先指定</p></li>
+<li><span class="mark"></span><p>配送と支払い方法</p></li>
+<li><span class="mark"></span><p>注文内容の確認</p></li>
+<li><span class="mark"></span><p>注文完了</p></li>
+</ul>
+</div>

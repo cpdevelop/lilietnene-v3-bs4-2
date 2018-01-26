@@ -28,6 +28,8 @@
     "font": "cpx \"node_modules/font-awesome/fonts/{*.otf,*.eot,*.svg,*.ttf,*.woff,*.woff2}\" \"dist/assets/fonts\"",
     "sass": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 \"src/styles/app.scss\" \"dist/bundle.css\"",
     "postsass": "postcss --config build/postcss.config.js --replace \"dist/*.css\" \"!dist/*.min.css\"",
+    "ftsass": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 \"src/styles/original.scss\" \"lib/future-shop/original.css\"",
+    "ftpostsass": "postcss --config build/postcss.config.js --replace \"lib/future-shop/*.css\"",
     "images": "cpx \"src/**/{*jpe?g,*.jpg,*.gif,*.png}\" \"dist\"",
     "c": "gulp compileHtml",
     "w": "webpack",

@@ -1,0 +1,30 @@
+<style>
+.FS2_bottom_btn_center_1 input[type="image"], .alignRight input[type="image"], .FS2_bottom_btn_left_2 input[type="image"], #entryForm > div.itemCenter input[type="image"] { width: 225px;}
+
+#form > table > tbody > tr > td.FS2_login_layout_table_td_left > div.inputTableArea > div:nth-child(4){text-align: center; margin: 2em 0; text-decoration: underline;}
+.FS2_OtherServiceLoginAreaDivider_container .FS2_Divider_line::before, .FS2_OtherServiceLoginAreaDivider_container .FS2_Divider_line::after { border-color: #eee;}
+.FS2_AnotherLogin_comment { font-size: 1em; margin: 20px 0; padding: 1em 1.75em; border: none; background: #fcecc8;}
+.FS2_AnotherLogin_comment p{ margin:0;}
+.FS2_AnotherLogin_comment::after { border-color: #fcecc8 transparent transparent;}
+
+.orderFlow{ display:none;}
+.flow{ font-size:.75em; line-height:1.2; display: flex; justify-content: center; margin-top: 30px; position: relative; list-style:none;}
+.flow li{ text-align:center; width:9em; margin: 0 1em; z-index: 10;}
+.flow li .mark{ display:block; width:4em; height:4em; margin:0 2em .75em; background-color:#fff; border:#f0ebe6 3px solid; border-radius: 30px; text-align: center; line-height: 2.75;}
+.flow .line{background-color: #f5f5f5; width: 41em; height: .25em; position: absolute; top: 2em; z-index: 0;}
+.flow.step1 li .mark::after{ font-size: 1.5em;}
+
+.flow.step1 li:nth-of-type(1) .mark{ background:#666666; border:none;}
+.flow.step1 li:nth-of-type(1) .mark::after{ content: "1"; color: #fff;}
+</style>
+
+<div class="CS_orderFlow">
+<ul class="flow step1">
+<span class="line"></span>
+<li><span class="mark"></span><p>お客様情報入力</p></li>
+<li><span class="mark"></span><p>お届け先指定</p></li>
+<li><span class="mark"></span><p>配送と支払い方法</p></li>
+<li><span class="mark"></span><p>注文内容の確認</p></li>
+<li><span class="mark"></span><p>注文完了</p></li>
+</ul>
+</div>
