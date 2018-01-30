@@ -1,0 +1,30 @@
+<style>
+.FS2_SettleEdit_icons{ margin: 1em 0 1.5em;}
+.FS2_list>li>div { font-size: 100%;}
+div.FS2_contents_container > ul > li > div > div > table > tbody > tr > td > select{ margin:1em 0;}
+#communication{height: 80px;}
+.FS2_body_Cart_SettleEdit .FS2_SettleExplainArea { line-height: 1.5;}
+
+.FS2_orderFlow{ display:none;}
+.flow{ font-size:.75em; line-height:1.2; display: flex; justify-content: center; margin-top: 30px; position: relative;}
+.flow li{ text-align:center; width:4em; margin: 0 1em; z-index: 10;}
+.flow li .mark{ display:block; width:2em; height:2em; margin:0 .85em .75em; background-color:#fff; border:#f0ebe6 3px solid; border-radius: 30px; text-align: center; line-height: 1.6;}
+
+.flow.step1 li:nth-of-type(1) .mark,
+.flow.step1 li:nth-of-type(2) .mark{ background:#ddd2c7; border:none;}
+.flow.step1 li:nth-of-type(1) .mark::after,
+.flow.step1 li:nth-of-type(2) .mark::after{ content: ""; display: block; width: 4em; height: 4em; background: url(https://secure2.future-shop.jp/~baby/svg/check.svg) no-repeat 11% 14%; background-size: 25%; }
+.flow.step1 li:nth-of-type(3) .mark{ background:#666666; border:none;}
+.flow.step1 li:nth-of-type(3) .mark::after{ content: "3"; color: #fff;}
+</style>
+
+<div class="CS_orderFlow">
+<ul class="flow step1">
+<span class="line"></span>
+<li><span class="mark"></span><p>お客様情報入力</p></li>
+<li><span class="mark"></span><p>お届け先指定</p></li>
+<li><span class="mark"></span><p>配送と支払い方法</p></li>
+<li><span class="mark"></span><p>注文内容の確認</p></li>
+<li><span class="mark"></span><p>注文完了</p></li>
+</ul>
+</div>

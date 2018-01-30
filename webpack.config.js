@@ -3,6 +3,7 @@ const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const Promise = require('bluebird');
 
 const VENDOR_LIBS = [
   'jquery',
@@ -10,19 +11,18 @@ const VENDOR_LIBS = [
   'popper.js'
 ];
 
-// const publidDir = path.join(__dirname, '/src'); //テンプレート開発用
 const publidDir = path.join(__dirname, '/dist');
 
 module.exports = [
   {
     entry: {
-      bundle: './src/js/index.js',
-      vendor: VENDOR_LIBS
+      vendor: VENDOR_LIBS, //['babel-polyfill', VENDOR_LIBS ]
+      bundle: './src/js/index.js', //['babel-polyfill','./src/js/index.js']
     },
     output: {
       path: publidDir,
       publicPath: '',
-      filename: '[name].js' //'[name].[chunkhash].js'
+      filename: '[name].js' //[name].[chunkhash.js
     },
     module: {
       loaders: [
@@ -30,7 +30,7 @@ module.exports = [
           exclude: /node_modules/,
           loader: 'babel-loader',
           query: {
-            presets: ['es2015']
+            presets: ['es2015-ie']
           }
         },
         {
@@ -54,16 +54,24 @@ module.exports = [
       extensions: ['.js', '.jsx']
     },
     plugins: [
-      // new webpack.optimize.CommonsChunkPlugin({
-      //   names: ['vendor', 'manifest']
-      // }),
+      new webpack.ProvidePlugin({
+            'Promise': 'bluebird'
+        }),
+      new webpack.optimize.CommonsChunkPlugin({
+        names: ['vendor', 'manifest']
+      }),
+      new webpack.optimize.UglifyJsPlugin({
+        compress: {
+          drop_console: true
+        }
+      }),
       new HtmlWebpackPlugin({
         template: 'src/index.html'
       }),
       new HtmlWebpackPlugin({
-        filename: 'brands.html',
-        template: 'src/brands.html'
-    }),
+        filename: "brands.html",
+        template: "src/brands.html"
+      })
     ]
   }
 ];

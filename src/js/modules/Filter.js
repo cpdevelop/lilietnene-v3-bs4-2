@@ -41,3 +41,5 @@ export default class Filter {
       });
   }
 }
+
+new Filter();

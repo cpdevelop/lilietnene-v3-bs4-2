@@ -1,0 +1,472 @@
+// ///////////////////////////////////
+// Bootstrap Variable Customize
+// ///////////////////////////////////
+
+@import "modules/custum";
+
+// ///////////////////////////////////
+// Include Bootstrap
+// ///////////////////////////////////
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// ///////////////////////////////////
+// Additional StyleSheets
+// ///////////////////////////////////
+
+// Function
+@import "modules/offcanvas";
+@import "modules/accordion";
+
+// Block
+@import "modules/header";
+@import "modules/footer";
+@import "modules/toolbar";
+@import "modules/menu";
+
+// Modules & Parts
+@import "modules/sprite";
+@import "modules/buttons";
+@import "modules/search";
+
+// Effects
+@import "modules/animation";
+
+// for future-shop
+
+#FS2_Preview {
+  display: none;
+}
+
+.FS2_TrialShop_hd, .FS2_Preview, .FS2_SystemNav_btnPreview {
+	display:none;
+}
+h2, .h2 {
+	font-size: 20px;
+}
+hr {
+	margin-bottom: 0px;
+	margin-top: 0px;
+	border-top: 1px solid #f1f1f1;
+	border-bottom: none;
+	border-left: none;
+	border-right: none;
+}
+a {
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+a:hover, a:active, a:focus {
+	outline: none;
+}
+img {
+    width: 100%;
+}
+
+#FS2_layout_body {
+	background: none;
+}
+ul.FS2_Utility1 {
+    display: none;
+}
+.FS2_Item_Thumbnail img {
+	margin: 0 10px 10px 0;
+
+}
+
+.FS2_contents_container, .FS2_memberOnly, .FS2_NoItemMessage, .FS2_upper_comment, .FS2_lower_comment, .FS2_ItemComment, .FS2_middle_comment {
+	background: #fff;
+	padding: 0;
+	-webkit-box-shadow: 0px 0px 5px #cfcfcf;
+	-moz-box-shadow: 0px 0px 5px #cfcfcf;
+	box-shadow: none;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 0;
+}
+.pan, .FS2_contents_container,
+.FS2_memberOnly, .FS2_NoItemMessage,
+.FS2_upper_comment, .FS2_lower_comment,
+.FS2_ItemComment, .FS2_middle_comment {
+	margin-left: 5%;
+	margin-right: 5%;
+}
+.pan {
+	font-size: 100%;
+	margin-top: 1.5rem;
+	margin-bottom: 1rem;
+	margin-left: 15px;
+}
+h1.FS2_PageTitle {
+  font-size: 1.1rem;
+    padding: 0;
+    border-bottom: none;
+    font-weight: normal;
+    margin: 2rem 0;
+    text-align: center;
+}
+.FS2_subContents_container h2 {
+	border-bottom: none;
+}
+.FS2_subContents_container dl dt {
+	border-bottom: none;
+	font-size: 1em;
+}
+.FS2_table {
+	font-size: 100%;
+}
+.FS2_table th {
+	background: none;
+	border: none;
+	font-weight: normal;
+	padding: 1.5em 0 1.5em 10px;
+	color: #808080;
+}
+.FS2_table td {
+	border: none;
+	line-height: 1.6;
+	padding: 10px 0 0 0;
+}
+.FS2_table input[type="text"], .FS2_table input[type="password"], .FS2_table input[type="number"], .FS2_table input[type="email"], .FS2_table input[type="tel"], .FS2_list input[type="text"], .FS2_list input[type="password"], .FS2_list input[type="number"], .FS2_list input[type="email"], .FS2_list input[type="tel"], .FS2_table select, .FS2_list select, .FS2_table textarea, .FS2_list textarea, #fs2_usePoint {
+	border: 1px solid #ddd;
+	padding: 10px;
+	width:100%;
+	border-radius: 6px;
+}
+ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+ background-color: #eee;
+ color: rgb(0, 0, 0);
+}
+.FS2_Button_P, .FS2_Button_N, .FS2_Button_S {
+	display: inline-block;
+	margin: 20px 0;
+	font-weight: normal;
+	text-align: center;
+	vertical-align: middle;
+	touch-action: manipulation;
+	cursor: pointer;
+	background-image: none;
+	border: 1px solid transparent;
+	white-space: nowrap;
+	padding: 10px 20px;
+	font-size: 12px;
+	line-height: 1.6;
+	border-radius: 4px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	border: none;
+	text-shadow: none;
+	box-shadow: none;
+}
+.FS2_Button_P {
+	background: #666;
+}
+.FS2_Button_N {
+	background: #dbdbdb;
+}
+.FS2_Button_S {
+	background: #d2d2d2;
+	color: #404040;
+}
+
+#FS2_footer {
+	margin-bottom: 0;
+}
+#FS2_SystemNav {
+	font-size: 14px;
+	color: #fff;
+	padding: 10px 3px 10px 3px;
+	margin: -3px 0 0 0;
+	text-align: center;
+	background: none;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+	border: nonr;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	text-shadow: none;
+	background: none;
+	background-color: #4c4345;
+
+  ul {
+    margin-bottom: 0;
+  }
+
+}
+.FS2_SystemNav_btnPC {
+	cursor: pointer;
+	color: #fff !important;
+	width: 90%;
+	margin: 0 auto;
+	color: #fff;
+	padding: 1rem;
+	background: none;
+	background: #5f5658;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	text-shadow: none;
+}
+.FS2_SystemNav_btnPC p {
+	margin: 0;
+}
+.FS_mailFilter_container {
+	background: #fff7f7;
+	padding: 15px;
+	margin: 1em 15px;
+	border: 1px solid #f9f0f0;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	font-size: .90em;
+}
+.FS_mailFilter_container p{ margin-bottom:0;}
+h2.FS2_CrossHead {
+	font-size: 100%;
+	margin: 0 0 1em;
+	padding-left: 0;
+	border-left: none;
+	line-height: 1.1;
+}
+ div.FS2_Button_container input:last-of-type, .FS2_Button_container~.FS2_Button_container input:first-child {
+margin-top: 0;
+margin-bottom: 30px;
+}
+div.FS2_Button_container input:first-child {
+	margin: 20px 0;
+}
+.FS2_list>li:last-child {
+	border-bottom: none !important;
+}
+.FS2_Utility2{ display:none;}
+/* form */
+input[type="radio"] {
+	position: relative;
+	-webkit-appearance: button;
+	appearance: button;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 1.5rem;
+	height: 1.5rem;
+	content: "";
+	background-color: #FFFFFF;
+	border: 1px solid #d8d8d8;
+	-webkit-border-radius: 2em;
+	border-radius: 2em;
+	vertical-align: middle;
+	cursor: pointer;
+	margin: 0 1em;
+}
+input[type="radio"]:checked:after {
+	display: block;
+	position: absolute;
+	top: 9px;
+	left: 8px;
+	content: "";
+	width: 6px;
+	height: 6px;
+	background: #a2a2a2;
+	-webkit-border-radius: 12px;
+	border-radius: .3em;
+}
+input[type="radio"]:first-child {
+	margin-left:0;
+}
+input[type=checkbox] {
+	display: inline-block;
+	position: relative;
+	margin-right: 5px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-appearance: button;
+	appearance: button;
+	width: 2.25em;
+	height: 2em;
+	border: 1px solid #c1c1c1;
+	vertical-align: middle;
+	border-radius: 4px;
+	margin-right: .75em;
+}
+input[type=checkbox]:checked::after {
+position: absolute;
+content: "";
+top: .3em;
+left: .7em;
+width: .75em;
+height: 1em;
+border-right: 3px solid #c7c7c7;
+border-bottom: 3px solid #c7c7c7;
+-webkit-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+.FS2_table input[type="text"], .FS2_table input[type="password"], .FS2_table input[type="number"], .FS2_table input[type="email"], .FS2_table input[type="tel"], .FS2_list input[type="text"], .FS2_list input[type="password"], .FS2_list input[type="number"], .FS2_list input[type="email"], .FS2_list input[type="tel"], .FS2_table select, .FS2_list select, .FS2_table textarea, .FS2_list textarea, #fs2_usePoint {
+	border-radius: 4px;
+}
+label {
+	margin-right: 1em;
+}
+#fs2_companyName, #fs2_companyName_multi, #fs2_companyNameKana, #fs2_companyNameKana_multi, #fs2_departmentName, #fs2_departmentName_multi, #fs2_departmentNameKana, #fs2_departmentNameKana_multi, #fs2_alternateEmail, #fs2_alternateEmail_multi, #fs2_prefecture, #fs2_prefecture_multi, #fs2_addressLine1, #fs2_addressLine1_multi, #fs2_addressLine2, #fs2_addressLine2_multi, #fs2_addressLine3, #fs2_addressLine3_multi, #fs2_nickName, #fs2_nickName_multi, #fs2_mobileEdyMailAddress, #fs2_mobileEdyMailAddress, #communication, #fs2_payment, #fs2_cardNo, #fs2_cardName, #name, #content, #coment, #mailAddress, #stopMailAddress, #releaseMailAddress, #phrase, .FS2_textField, .FS2_body_Cart_GuestLogin #mail, .FS2_body_FixedPeriodGuestLogin #mail, .FS2_body_Cart_GuestLogin #phrase, .FS2_body_FixedPeriodGuestLogin #phrase, #passwordNew, #passwordNewConfirm, #tempPassword, .FS2_applyNo input {
+	width: 100%;
+}
+input[type="button"] {
+	display: inline-block;
+	margin: 0;
+	font-weight: normal;
+	text-align: center;
+	vertical-align: middle;
+	touch-action: manipulation;
+	cursor: pointer;
+	background-image: none;
+	border: 1px solid transparent;
+	white-space: nowrap;
+	padding: 10px!important;
+	font-size: 12px;
+	line-height: 1.6;
+	border-radius: 4px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	border: none;
+	text-shadow: none;
+	box-shadow: none;
+}
+.FS2_assist_required {
+	background: #f7f7f7;
+	border: 1px solid #e8e8e8;
+}
+.FS2_table {
+	font-size: 100%;
+}
+.FS2_table th {
+	padding: 0;
+}
+.FS2_table td input {
+	padding: 0;
+	margin-bottom: .5em;
+}
+/* each */
+#fs2_firstName, #fs2_firstNameKana {
+	margin-left:5%;
+}
+#fs2_lastName, #fs2_lastName_multi, #fs2_firstName, #fs2_firstName_multi, #fs2_lastNameKana, #fs2_lastNameKana_multi, #fs2_firstNameKana, #fs2_firstNameKana_multi, #nickName, #contributionDateTime, #nameLast, #nameFirst {
+	width: 46%;
+}
+#fs2_email, #fs2_email_multi, #fs2_password, #fs2_password_multi, #email, #offerMailAddress, #entryMailAddress {
+	width: 100%;
+	margin-bottom: .5em;
+}
+#fs2_emailConfirmation, #fs2_emailConfirmation_multi, #fs2_passwordConfirmation, #fs2_passwordConfirmation_multi, #offerMailAddressConfirm, #entryMailAddressConfirm, #emailConfirm {
+	width: 100%;
+}
+.FS2_table td span {
+	display: block;
+	color: #909090;
+	text-align: right;
+}
+.FS2_table input.FS2_assist_error, .FS2_table select.FS2_assist_error, .FS2_table textarea.FS2_assist_error, .FS2_list input.FS2_assist_error, .FS2_list select.FS2_assist_error, .FS2_list textarea.FS2_assist_error, .FS2_FixedPeriodDelivery_CycleEdit select.FS2_assist_error, #fs2_usePoint.FS2_assist_error {
+	border: 1px dotted #f3c7c7;
+	background: #fff7f7;
+}
+.FS2_assist_message {
+	padding: .5em;
+	border-radius: 3px;
+	background-color: #ffcfcf;
+	margin-top: .5em;
+}
+.FS2_assist_container span {
+	color: #fff !important;
+	text-align: center !important;
+}
+.FS2_icon_require {
+	color: #fff;
+	background: #da7070;
+	margin: 0 0 0 .75em;
+	display: inline-block;
+	padding: .2em .5em .4em;
+	line-height: 1;
+	font-size: .75%;
+	border-radius: 2px;
+}
+#fs2_zipCodeFront {
+	width: 25%;
+}
+#fs2_zipCodeBack {
+	margin-left: .5em;
+	width: 38%;
+}
+#fs2_zipCodeFront, #fs2_zipCodeBack, #fs2_phoneNumberPublic, #fs2_phoneNumberLocal {
+	margin-right:.5em
+}
+#fs2_phoneNumberLocal, #fs2_phoneNumberMember {
+	margin-left: .5em;
+}
+#fs2_phoneNumberPublic, #fs2_phoneNumberLocal, #fs2_phoneNumberMember {
+	width: 28%;
+}
+.FS2_birthdayDateYear {
+	text-align:left!important;
+}
+#fs2_birthdayYear {
+	width: 70%;
+	margin-right: .5em;
+	margin-bottom: .5em;
+}
+#fs2_birthdayMonth, #fs2_birthdayDay {
+	width: 40%;
+	margin-right: .5em;
+}
+#fs2_birthdayDay {
+	margin-left: .5em;
+}
+.FS2_list>li {
+	padding: 1.5em 0;
+	border-bottom: 1px dotted #ddd;
+}
+.FS2_orderFlow {
+	text-align: center;
+	margin: 1.5em 30px 1em;
+}
+.FS2_orderFlow img {
+	max-width: 100% !important;
+}
+.FS2_SettleEdit_list li {
+	border: none;
+	padding: 0 0 1em;
+}
+.FS2_Utility2 li a {
+    background-size: 5px;
+}
+.FS2_sp_dialog_back {
+	background: #999;
+}
+.FS2_dialog_container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+.FS2_contents_container .error_content {
+	margin: 0 10%;
+}
+.error_content {
+	background: white;
+    color: #5d5d5d;
+    padding: 3em;
+    margin: -80px 17% 0;
+    width: 65%;
+    border-radius: 6px;
+}
+
+#fs2_prefecture {
+    margin-bottom: 15px;
+}

@@ -7,6 +7,9 @@
 //
 /////////////////////////////////////////////
 
+// 'use strict'
+// const Promise = require('es6-promise').Promise;
+
 import Offcanvas from './modules/Offcanvas';
 import Filter from './modules/Filter';
 

@@ -1,0 +1,61 @@
+<style>
+.FS2_Cart_Item_Thumbnail img {  margin: 0 1em 1em 0;}
+
+.FS2_orderFlow{ display:none;}
+.flow{ font-size:.75em; line-height:1.2; display: flex; justify-content: center; margin-top: 30px; position: relative;}
+.flow li{ text-align:center; width:4em; margin: 0 1em; z-index: 10;}
+.flow li .mark{ display:block; width:2em; height:2em; margin:0 .85em .75em; background-color:#fff; border:#f0ebe6 3px solid; border-radius: 30px; text-align: center; line-height: 1.6;}
+
+.flow.step1 li:nth-of-type(1) .mark,
+.flow.step1 li:nth-of-type(2) .mark,
+.flow.step1 li:nth-of-type(3) .mark{ background:#ddd2c7; border:none;}
+.flow.step1 li:nth-of-type(1) .mark::after,
+.flow.step1 li:nth-of-type(2) .mark::after,
+.flow.step1 li:nth-of-type(3) .mark::after{ content: ""; display: block; width: 4em; height: 4em; background: url(https://secure2.future-shop.jp/~baby/svg/check.svg) no-repeat 11% 14%; background-size: 25%; }
+.flow.step1 li:nth-of-type(4) .mark{ background:#666666; border:none;}
+.flow.step1 li:nth-of-type(4) .mark::after{ content: "4"; color: #fff;}
+
+/* 注文内容確認 */
+.FS2_table th { padding: 15px 0 0;}
+.FS2_table td { padding: 10px 0 15px;}
+.FS2_contents_container ul { margin-bottom: 20px;}
+.FS2_Cart_list{ background: #f9f9f9; padding: 20px;}
+.FS2_Cart_list .FS2_table th,.FS2_Cart_list .FS2_table td { padding: 5px 0;}
+.FS2_Cart_Item_Name { padding: 0;}
+.FS2_Cart_Item_Name a { color:#323232; font-weight:400; text-decoration: underline;}
+.FS2_Cart_list li { padding: 20px 0 10px; border-bottom: 2px solid #ececec;}
+.FS2_Cart_Detail_Count,.FS2_Cart_Detail_Subtotal{ height:4em}
+.FS2_Cart_Detail_Subtotal { border-top: #ececec 1px dotted;}
+.FS2_Cart_Sum_table { width: 100%; margin: 0;}
+.FS2_Cart_Detail_Postage th,.FS2_Cart_Detail_Postage td{ padding-bottom:20px;}
+.FS2_Cart_Sum_table tr.FS2_Cart_Detail_InclusiveSum th, .FS2_Cart_Sum_table tr.FS2_Cart_Detail_InclusiveSum td { border-top: 2px solid #ececec; padding-top: 20px;}
+.FS2_Cart_list >li:last-child{margin-bottom: 0; padding-bottom: 0;}
+.FS2_OrderConfirm_list li{ padding: 0; border-bottom: none;}
+.FS2_OrderConfirm_Customer_table,
+.FS2_OrderConfirm_Delivery_table { border: #efefef 1px solid;}
+.FS2_OrderConfirm_Customer_table th,.FS2_OrderConfirm_Customer_table td,
+.FS2_OrderConfirm_Delivery_table th,.FS2_OrderConfirm_Delivery_table td{ padding-left:20px; padding-right:20px;}
+.FS2_OrderConfirm_Customer_table tr:first-child th,.FS2_OrderConfirm_Customer_table tr:first-child td,
+.FS2_OrderConfirm_Delivery_table tr:first-child th,.FS2_OrderConfirm_Delivery_table tr:first-child td{ padding-top:20px; }
+.FS2_OrderConfirm_Customer_table tr:last-child th,.FS2_OrderConfirm_Customer_table tr:last-child td,
+.FS2_OrderConfirm_Delivery_table tr:last-child th,.FS2_OrderConfirm_Delivery_table tr:last-child td,
+.FS2_Cart_Detail_Postage th,.FS2_Cart_Detail_Postage td{ padding-bottom:20px!important; }
+.FS2_OrderConfirm_Customer_table th,.FS2_OrderConfirm_Delivery_table th{ border-top: 1px solid #ececec;font-weight: bold; color: #323232;}
+.FS2_OrderConfirm_list > li:last-child > p{font-size: 100%;border: #efefef 1px solid; padding:20px;}
+.FS2_OrderConfirm_list>li{ border-bottom:none; padding: 0;}
+.FS2_ModifyButton_container{ text-align:center; margin:0 !important;}
+.FS2_ModifyButton{ width:90%;}
+input#delivery{ margin-top: 20px;}
+.FS2_OrderDecideButton_container{ padding-top:20px; border-top: 1px solid #ececec; }
+</style>
+
+<div class="CS_orderFlow">
+<ul class="flow step1">
+<span class="line"></span>
+<li><span class="mark"></span><p>お客様情報入力</p></li>
+<li><span class="mark"></span><p>お届け先指定</p></li>
+<li><span class="mark"></span><p>配送と支払い方法</p></li>
+<li><span class="mark"></span><p>注文内容の確認</p></li>
+<li><span class="mark"></span><p>注文完了</p></li>
+</ul>
+</div>

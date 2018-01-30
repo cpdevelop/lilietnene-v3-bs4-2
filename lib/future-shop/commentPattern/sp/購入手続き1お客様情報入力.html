@@ -1,0 +1,24 @@
+<style>
+.FS2_table th { padding: 1em 0 0;}
+label { margin-top: 5px;}
+div.FS2_contents_container > table > tbody > tr > td > input{ margin:.5em 0;}
+
+.FS2_orderFlow{ display:none;}
+.flow{ font-size:.75em; line-height:1.2; display: flex; justify-content: center; margin-top: 30px; position: relative;}
+.flow li{ text-align:center; width:4em; margin: 0 1em; z-index: 10;}
+.flow li .mark{ display:block; width:2em; height:2em; margin:0 .85em .75em; background-color:#fff; border:#f0ebe6 3px solid; border-radius: 30px; text-align: center; line-height: 1.6;}
+
+.flow.step1 li:nth-of-type(1) .mark{ background:#666666; border:none;}
+.flow.step1 li:nth-of-type(1) .mark::after{ content: "1"; color: #fff;}
+</style>
+
+<div class="CS_orderFlow">
+<ul class="flow step1">
+<span class="line"></span>
+<li><span class="mark"></span><p>お客様情報入力</p></li>
+<li><span class="mark"></span><p>お届け先指定</p></li>
+<li><span class="mark"></span><p>配送と支払い方法</p></li>
+<li><span class="mark"></span><p>注文内容の確認</p></li>
+<li><span class="mark"></span><p>注文完了</p></li>
+</ul>
+</div>

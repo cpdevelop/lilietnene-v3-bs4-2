@@ -1,0 +1,73 @@
+<style>
+.shareButton dd {
+    width: 3.5rem;
+    height: 3.5rem;
+    position: relative;
+    margin: 0 .5rem;
+    overflow: hidden;
+    display: inline-block;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    white-space: nowrap;
+    padding: 1rem;
+    font-size: 16px;
+    line-height: 1;
+    border-radius: 3rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+.shareButton dd a{
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 1.25rem;
+   }
+.shareButton dd > .icon-share:before{
+  margin-right:.75em;
+  color:#fff;
+}
+dd.facebook a,dd.twitter a {
+  padding:0;
+}
+dd.facebook{
+  background: #617faf;
+}
+dd.twitter {
+  background:#5fbede;
+}
+dd.line {
+  background:#00b833;
+  position:relative;
+}
+dd.line > span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+dd.line > span > a  > img[src*="/media.line.me/"] {display:block; opacity: 0;}
+.btnWrap > .icon > img, body > div > button > img{ display:none;}
+</style>
+
+<div id="fb-root"></div>
+<dl class="shareButton" style="text-align:center;">
+  <dd class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=$ITEM_ENCODE_URL$" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></dd>
+  <dd class="twitter"><a href="http://twitter.com/share?url=$ITEM_ENCODE_URL$&via=lilietneneNews" data-count="horizontal" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></dd>
+  <dd class="line"><span><script type="text/javascript" src="//media.line.me/js/line-button.js?v=20140411" ></script><script type="text/javascript">
+new media_line_me.LineButton({"pc":false,"lang":"ja","type":"d"});</script></span></dd>
+</dl>
+<script>(function(d, s, id) {
+	var js, fjs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id)) return;
+	js = d.createElement(s); js.id = id;
+	js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.0";
+	fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>

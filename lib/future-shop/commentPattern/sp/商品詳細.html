@@ -1,0 +1,212 @@
+<style>
+.itemwrap .panel {
+	margin-top: 1.5em;
+	margin-bottom: 0;
+	background: none;
+	border: none;
+	border-radius: 4px;
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+	box-shadow: none;
+}
+.itemwrap .list-group-item {
+	border-bottom: none;
+	border-left:none;
+	border-right:none;
+	border-top: 1px #e9e9e9 solid;
+	padding: 1em .75em;
+	font-weight: 600;
+	margin-bottom: -1px;
+	background: none;
+	width: 100%;
+	text-align: left;
+}
+.itemwrap .list-group-item:focus {
+	outline: none;
+}
+.detail, .brand {
+	padding: 0 .75em;
+}
+.itemwrap .list-group.itemdetail b {
+	margin:1em 0 .5em;
+}
+.itemwrap p {
+	margin-bottom:.75em;
+}
+.detail dt, .brand dt {
+	margin:.75em 0;
+}
+.itemwrap .info {
+	padding: 1.5em 0 0 0 !important;
+	margin: 0;
+	border-top: 1px #e9e9e9 solid;
+}
+.itemwrap .list-group-item:first-child {
+	border-top-right-radius: 0;
+	border-top-left-radius: 0;
+}
+.itemwrap a.list-group-item:hover, .itemwrap a.list-group-item:focus, .itemwrap button.list-group-item:hover, .itemwrap button.list-group-item:focus {
+	background-color: none;
+}
+.fs_sp_drag_container .fs_sp_drag_target {
+	display: none;
+}
+.itemTitle {
+	margin: 0;
+	padding-left: 0;
+	line-height: 1.4;
+	font-size:17px;
+	font-weight: inherit;
+}
+.FS2_Name_and_Price li {
+	border-bottom: none;
+	padding: 0;
+	margin: 10px 0;
+}
+.itemPrice {
+	color: #231f20;
+	font-weight: inherit;
+	font-size: 17px;
+}
+.FS2_itemPrice_addition {
+	color: #231f20;
+	font-size:10px;
+	padding-left:.5em;
+}
+.FS2_Figure input.FS2_Figure_textarea {
+	border: 1px solid #ddd;
+	padding: 5px 10px;
+	width: 80px;
+	text-align: center;
+	font-size: 16px;
+	margin: 10px 10px;
+  border-radius: 6px;
+}
+.FS2_InCartButton_D {
+	color: #ffffff;
+	background: -moz-linear-gradient(to bottom, #323232, #323232);
+	background: #323232;
+	background: -o-linear-gradient(to bottom, #323232, #323232);
+	background: -ms-linear-gradient(to bottom, #323232, #323232);
+	background: linear-gradient(to bottom, #323232, #323232);
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border: none;
+	-moz-box-shadow: 0px 2px 3px rgba(000, 000, 000, 0.6), inset 0px 0px 1px rgba(0, 0, 0, 0.7);
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	text-shadow: none;
+	font-family: "lato", "Noto Sans Japanese", Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 16px 20px;
+	text-transform: uppercase;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+	letter-spacing: 0.12em;
+	width: 100%;
+	margin: 20px 0 0;
+}
+.FS2_Figure input.FS2_Figure_textarea {
+	border: 1px solid #ddd;
+	padding: 10px;
+	width: 80px;
+	text-align: center;
+	font-size: 16px;
+	margin: 10px 10px;
+	color: #333;
+}
+p.FS2_PageTitle {
+	display:none;
+}
+.FS2_Button li {
+	border-bottom: none;
+	margin-bottom: .5rem;
+}
+.FS2_Button li a {
+	padding: 0;
+	background: none;
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+}
+.FS2_ItemInquiry a::before {
+	display: inline-block;
+	margin-right: .75rem;
+	content: "\f003";
+}
+#FS2_WishListEntry_gd2 a::before {
+	display: inline-block;
+	margin-right: .75rem;
+	content: "\f08a";
+}
+
+#FS2_WishListRegistered_gd2 a::before {
+	display: inline-block;
+	margin-right: .75rem;
+	content: "\f004";
+	color: #da7070;
+}
+
+.FS2_Button .FS2_WishListRegistered a {
+	opacity: 0.7;
+}
+
+.FS2_ItemThumbnails {
+	position: relative;
+}
+.fs_sp_flick_btn_left {
+	background: rgba(0, 0, 0, 0) url(https://secure1.future-shop.jp/~lilietnene/svg/thumb_btn_l.svg) no-repeat;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translatey(-50%);
+	z-index: 999;
+}
+.fs_sp_flick_btn_right {
+	background: rgba(0, 0, 0, 0) url(https://secure1.future-shop.jp/~lilietnene/svg/thumb_btn_r.svg) no-repeat;
+	position: absolute;
+	top: 50%;
+	right:0;
+	transform: translatey(-50%);
+	z-index: 999;
+}
+.fs_sp_flick_btn_left, .fs_sp_flick_btn_right {
+	width: 40px;
+	height: 40px;
+}
+.FS2_contents_container dt {
+	margin: 1.5em 0 .75em;
+}
+.FS2_contents_container dd {
+	line-height: 1.8;
+}
+.FS2_Search, .FS2_Utility1_container, .FS2_Utility2_container, div.FS2_ReviewEdit {
+	display:none;
+}
+.FS2_noStockText {
+    background: #f7f7f7;
+    color: #808080;
+    border: 1px dotted #e6e6e6;
+    margin: 0 0 .75em;
+	padding: .25em;
+    text-align: center;
+    font-size: .75em;
+    letter-spacing: .1em;
+}
+#FS2_Variation_cartbutton .FS2_VariationValueList > ul {
+    border-width: 2px 0;
+    border-top: #eee 1px solid;
+    border-bottom: #eee 1px solid;
+    padding: .75em 0;
+    margin: .75em 0;
+}
+.FS2_ItemComment {
+		/* border-bottom: #ebe9e7 1px solid; */
+    margin-bottom: 1rem;
+    /* padding-bottom: .5rem; */
+}
+</style>
