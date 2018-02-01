@@ -18,8 +18,10 @@ export default class Filter {
         e.preventDefault();
         const current = $(this);
         const boxes = $('.boxes');
+
         $('.filter [data-filter]').removeClass('active');
         current.addClass('active');
+
         const selected = current.attr('data-filter');
         const selectedItem = $(`.boxes.${selected}`);
 
@@ -42,4 +44,4 @@ export default class Filter {
   }
 }
 
-new Filter();
+//new Filter();

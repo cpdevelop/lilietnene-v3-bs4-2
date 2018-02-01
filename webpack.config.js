@@ -16,7 +16,7 @@ const publidDir = path.join(__dirname, '/dist');
 module.exports = [
   {
     entry: {
-      vendor: VENDOR_LIBS, //['babel-polyfill', VENDOR_LIBS ]
+      // vendor: VENDOR_LIBS,
       bundle: './src/js/index.js', //['babel-polyfill','./src/js/index.js']
     },
     output: {
@@ -29,9 +29,9 @@ module.exports = [
         {
           exclude: /node_modules/,
           loader: 'babel-loader',
-          query: {
-            presets: ['es2015-ie']
-          }
+          // query: {
+          //   presets: ['es2015-ie']
+          // }
         },
         {
           test: /\.html/,
@@ -57,9 +57,9 @@ module.exports = [
       new webpack.ProvidePlugin({
             'Promise': 'bluebird'
         }),
-      new webpack.optimize.CommonsChunkPlugin({
-        names: ['vendor', 'manifest']
-      }),
+      // new webpack.optimize.CommonsChunkPlugin({
+      //   names: ['vendor', 'manifest']
+      // }),
       new webpack.optimize.UglifyJsPlugin({
         compress: {
           drop_console: true

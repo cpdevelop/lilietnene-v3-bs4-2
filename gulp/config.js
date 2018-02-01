@@ -1,6 +1,7 @@
 module.exports = function () {
     const root = './';
     const assetRoot = root + 'src/';
+    // const output = root + 'src/html';
     const handlebarsRoot = assetRoot + 'templates/';
     //const publidDir = root + 'dist/';
 

@@ -29,5 +29,4 @@ export default class Offcanvas {
               $('.offcanvas-close').removeClass('fadein');
     }
   }
-
 }

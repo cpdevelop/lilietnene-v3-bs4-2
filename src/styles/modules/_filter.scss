@@ -4,6 +4,16 @@
   font-size: 1rem;
 }
 
+
+/* for IE */
+@media all and (-ms-high-contrast:none){
+  *::-ms-backdrop, .filter-box { display: none;} /* IE11 */
+}
+@media all and (-ms-high-contrast:none){
+  .filter-box { display: none;} /* IE10 */
+}
+
+
 // .filter a.active:before {
 //   content: '';
 //   position: absolute;

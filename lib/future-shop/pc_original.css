@@ -8757,7 +8757,6 @@ input[type="radio"], input[type="checkbox"] {
 .cartTable {
   border: 1px solid #ebe9e7;
   width: 90%;
-  margin: 0 5% 1rem;
 }
 
 .cartTable th,
@@ -8843,7 +8842,7 @@ input[type="radio"], input[type="checkbox"] {
 .FS2_bottom_btn_left_2 input[type="image"],
 #entryForm > div.itemCenter input[type="image"] {
   margin-top: 1rem;
-  width: 345px;
+  width: 340px;
 }
 
 .FS2_bottom_btn_info input[type="image"] {
@@ -8859,10 +8858,6 @@ input[type="radio"], input[type="checkbox"] {
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
-}
-
-#form > table > tbody > tr > td.FS2_login_layout_table_td_right > div.FS2_Login_btn_position > a img {
-  width: 100%;
 }
 
 div.FS2_bottom_btn_info > a > img, #form > .FS2_bottom_btn_center_1 > a > img {
