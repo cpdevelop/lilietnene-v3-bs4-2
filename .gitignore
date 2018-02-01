@@ -4,3 +4,4 @@ src/*.html
 src/styles/*.css
 src/styles/*.map
 _note
+lib/csv/~$data.xlsm
