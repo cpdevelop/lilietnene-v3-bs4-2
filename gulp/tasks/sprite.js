@@ -7,7 +7,7 @@ const svg = "lib/svg/*.svg"; // Original SVG
 const copiedDir = "lib/svg/sprite/";
 const generatedCss = "lib/svg/sprite/css/*.css";
 const copiedSvg = "lib/svg/sprite/css/*.svg";
-const destSvg = "src/assets/svg";
+const destSvg = "src/assets/svg/";
 const destCss = "src/styles/modules";
 
 const config = {
@@ -24,7 +24,13 @@ const config = {
 };
 
 gulp.task('beginClean', () =>  {
-    return del([copiedDir,destSvg]);
+    return del([
+      'dist/assets/svg/*.svg',
+      'src/assets/svg/*.svg',
+      'src/styles/modules/_sprite.scss',
+      '!dist/assets/svg/logo*.svg',
+      '!src/assets/svg/logo*.svg'
+    ]);
 });
 
 gulp.task('createSprite',['beginClean'],() => {//
@@ -44,8 +50,8 @@ gulp.task('copySpriteCSS',['createSprite'],() => {//
     .pipe(gulp.dest(destCss));
 });
 
-gulp.task('endClean',['copySpriteGraphic', 'copySpriteCSS'], () => {//
-  return del('lib/svg/sprite');
+gulp.task('endClean',['copySpriteGraphic', 'copySpriteCSS'],() => {//
+  return del(['lib/svg/sprite/css/']);
 });
 
-gulp.task('sprite');
+gulp.task('sprite', ['beginClean','createSprite', 'copySpriteGraphic', 'copySpriteCSS', 'endClean']); //'createPngCopy',

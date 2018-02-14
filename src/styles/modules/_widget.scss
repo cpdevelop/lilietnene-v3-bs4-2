@@ -1,0 +1,47 @@
+.widget {
+
+  &__group {
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px $gray-400 solid;
+
+    a {
+      display: block;
+      padding: 1rem 0 1rem 0;
+
+      h3, h4, h5, h6 {
+        display: inline-block;
+      }
+    }
+
+    a::after{
+      font: normal normal normal 14px/1 FontAwesome;
+      content: "\f105";
+      float: right;
+      line-height: inherit;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 1rem;
+  }
+
+  .border-bottom-no {
+    border-bottom: none;
+  }
+
+}
+
+@media (min-width: 768px) {
+  .widget__group {
+    margin-left: 1rem;
+    border-bottom: none;
+  }
+}

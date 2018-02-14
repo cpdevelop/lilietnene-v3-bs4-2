@@ -4,6 +4,5 @@
 <svg version="1.1" id="レイヤー_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
 	 y="0px" width="20px" height="20px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
 <rect fill="none" width="20" height="20"/>
-<polygon fill="#696C5F" points="18,18 17,18 17,7.32 9.999,4.1 3,7.321 3,18 2,18 2,6.679 10.001,3 18,6.68 "/>
-<path fill="#696C5F" d="M13,15H7V9h6V15z M8,14h4v-4H8V14z"/>
+<polyline fill="none" stroke="#696C5F" stroke-miterlimit="10" points="17.971,18 17.971,7 10,3.333 1.97,7 1.97,18 "/>
 </svg>

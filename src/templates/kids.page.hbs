@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<head>
+    <meta charset="utf-8" />
+    <title>LiLi et NeNe - For Kids</title>
+    {{>common-meta}}
+</head>
+<body>
+  <div class="row-offcanvas row-offcanvas-left">
+    {{>common-header}}
+    {{>common-gnav}}
+      <div class="container">
+        <h1 class="page__title">
+          Kids Fashion
+          <small class="text-muted">2-12 YEARS</small>
+        </h1>
+        <main role="main" class="container">
+          <div class="row withwidget category">
+            {{>category-kids-sections}}
+            {{>category-kids-widget}}
+          </div>
+        </main>
+      </div><!-- ./container -->
+    {{>common-pagetop}}
+    {{>common-footer}}
+    {{>common-offcanvas}}
+  </div><!--/.row-offcanvas-->
+  {{>common-scripts-ie}}
+  <script>
+    var countdown = function(due) {
+      var now = new Date();
+
+      var rest = due.getTime() - now.getTime();
+      var sec = Math.floor(rest / 1000) % 60;
+      var min = Math.floor(rest / 1000 / 60) % 60;
+      var hours = Math.floor(rest / 1000 / 60 / 60) % 24;
+      var days = Math.floor(rest / 1000 / 60 / 60 / 24);
+      var count = [ days, hours, min, sec];
+
+      return count;
+    }
+
+    var goal = new Date(2018, 1, 9, 21, 00); //month -1
+
+    var recalc = function() {
+    var now = new Date();
+    var counter = countdown(goal);
+
+    if ( goal < now ){
+          document.getElementById('timer').remove();
+          //document.getElementById('message').textContent = '';
+       } else {
+          document.getElementById('day').textContent = counter[0];
+          document.getElementById('hour').textContent = counter[1];
+          document.getElementById('min').textContent = counter[2];
+          document.getElementById('sec').textContent = counter[3];
+       }
+
+       refresh();
+    }
+
+    var refresh = function() {
+      setTimeout(recalc, 1000);
+    }
+
+    recalc();
+  </script>
+</body>
+
+</html>

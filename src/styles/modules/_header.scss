@@ -1,6 +1,6 @@
 .header {
   z-index: 3;
-  
+
   .info {
     background-color: $l-snow;
     color: $gray-700;
@@ -9,11 +9,17 @@
     font-size: .675rem
   }
 
+  .icon--logo {
+    width: 228px;
+    height: 40px;
+    background-image: url('assets/svg/logo.svg');
+  }
+
   @media (max-width: 575px) {
     .icon--logo {
       width: 138px;
-      height: 34px;
-      background-position: 0 72.97297297297297%;
+      height: 26px;
+      background-image: url('assets/svg/logo-xs.svg');
     }
   }
-} /*./header */
+}

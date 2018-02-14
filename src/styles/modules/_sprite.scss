@@ -1,64 +1,310 @@
     .icon {
-        background-image: url('assets/svg/sprite-8a7317b9.svg');
+        background-image: url('assets/svg/sprite-2374ce35.svg');
         background-repeat: no-repeat;
       }
+
+    .icon--carousel-control-next {
+      width: 45.75px;
+      height: 90.049px;
+      background-position: 0 0;
+    }
+
+    .icon--carousel-control-prev {
+      width: 45.75px;
+      height: 90.049px;
+      background-position: 27.3542600896861% 0;
+    }
 
     .icon--cart {
       width: 20px;
       height: 20px;
-      background-position: 66.34615384615384% 61.36363636363637%;
+      background-position: 12.484455958549223% 97.20419161676647%;
     }
 
     .icon--help {
       width: 20px;
       height: 20px;
-      background-position: 75.96153846153847% 61.36363636363637%;
+      background-position: 74.90984455958548% 82.77664670658682%;
     }
 
     .icon--history {
       width: 20px;
       height: 20px;
-      background-position: 85.57692307692308% 61.36363636363637%;
+      background-position: 62.424870466321245% 68.34910179640718%;
     }
 
     .icon--home {
       width: 20px;
       height: 20px;
-      background-position: 95.1923076923077% 61.36363636363637%;
+      background-position: 49.939896373056996% 53.921556886227556%;
+    }
+
+    .icon--item-b-acc-goods {
+      width: 24.095px;
+      height: 24.093px;
+      background-position: 0 99.64642403334416%;
+    }
+
+    .icon--item-b-acc-goods-tights-socks {
+      width: 24.094px;
+      height: 24.094px;
+      background-position: 99.92218351984586% 0;
+    }
+
+    .icon--item-b-bottoms {
+      width: 24.094px;
+      height: 24.093px;
+      background-position: 99.92218351984586% 59.160134309759556%;
+    }
+
+    .icon--item-b-bottoms-leggins {
+      width: 24.094px;
+      height: 24.094px;
+      background-position: 99.92218351984586% 44.37037309859674%;
+    }
+
+    .icon--item-b-boys {
+      width: 24.094px;
+      height: 24.094px;
+      background-position: 99.92218351984586% 29.580248732397823%;
+    }
+
+    .icon--item-b-dress {
+      width: 24.094px;
+      height: 24.094px;
+      background-position: 99.92218351984586% 14.790124366198912%;
+    }
+
+    .icon--item-b-outer {
+      width: 24.971px;
+      height: 24.094px;
+      background-position: 48.66270628466886% 0;
+    }
+
+    .icon--item-b-rompers {
+      width: 24.095px;
+      height: 24.095px;
+      background-position: 87.1670945713454% 73.95107578036279%;
+    }
+
+    .icon--item-b-roomwear {
+      width: 24.094px;
+      height: 24.094px;
+      background-position: 99.92218351984586% 88.7395184953286%;
+    }
+
+    .icon--item-b-shoes {
+      width: 24.095px;
+      height: 24.094px;
+      background-position: 87.1670945713454% 59.16049746479565%;
+    }
+
+    .icon--item-b-swimwear {
+      width: 24.094px;
+      height: 24.093px;
+      background-position: 99.92218351984586% 73.94955404003511%;
+    }
+
+    .icon--item-b-tops {
+      width: 24.095px;
+      height: 24.094px;
+      background-position: 87.1670945713454% 44.37037309859674%;
+    }
+
+    .icon--item-k-acc-goods {
+      width: 24.096px;
+      height: 24.094px;
+      background-position: 74.41187057976539% 0;
+    }
+
+    .icon--item-k-acc-goods-tights-socks {
+      width: 24.096px;
+      height: 24.094px;
+      background-position: 74.41187057976539% 14.790124366198912%;
+    }
+
+    .icon--item-k-ballet {
+      width: 24.096px;
+      height: 24.094px;
+      background-position: 74.41187057976539% 29.580248732397823%;
+    }
+
+    .icon--item-k-bottoms {
+      width: 24.096px;
+      height: 24.094px;
+      background-position: 74.41187057976539% 44.37037309859674%;
+    }
+
+    .icon--item-k-bottoms-leggins {
+      width: 24.096px;
+      height: 24.094px;
+      background-position: 74.41187057976539% 59.16049746479565%;
+    }
+
+    .icon--item-k-boys {
+      width: 24.096px;
+      height: 24.094px;
+      background-position: 0 84.85691134764832%;
+    }
+
+    .icon--item-k-dress {
+      width: 24.096px;
+      height: 24.094px;
+      background-position: 12.75568542751874% 84.85691134764832%;
+    }
+
+    .icon--item-k-inner-pajamas {
+      width: 24.096px;
+      height: 24.094px;
+      background-position: 61.65618515224665% 44.37037309859674%;
+    }
+
+    .icon--item-k-outer {
+      width: 24.096px;
+      height: 24.094px;
+      background-position: 38.26705628255622% 84.85691134764832%;
+    }
+
+    .icon--item-k-shoes {
+      width: 24.096px;
+      height: 24.094px;
+      background-position: 51.02274171007496% 84.85691134764832%;
+    }
+
+    .icon--item-k-swimwear {
+      width: 24.096px;
+      height: 24.094px;
+      background-position: 63.7784271375937% 84.85691134764832%;
+    }
+
+    .icon--item-k-tops {
+      width: 24.096px;
+      height: 24.094px;
+      background-position: 87.16755600728413% 0;
+    }
+
+    .icon--item-l-acc-goods-bag {
+      width: 24.096px;
+      height: 24.094px;
+      background-position: 87.16755600728413% 14.790124366198912%;
+    }
+
+    .icon--item-l-acc-goods-bracelet-rings {
+      width: 24.096px;
+      height: 24.094px;
+      background-position: 87.16755600728413% 29.580248732397823%;
+    }
+
+    .icon--item-l-acc-goods-earrings {
+      width: 24.096px;
+      height: 24.094px;
+      background-position: 51.02274171007496% 70.06678698144941%;
+    }
+
+    .icon--item-l-acc-goods-hats-caps {
+      width: 24.096px;
+      height: 24.094px;
+      background-position: 38.26705628255622% 70.06678698144941%;
+    }
+
+    .icon--item-l-acc-goods-necklace {
+      width: 24.096px;
+      height: 24.094px;
+      background-position: 25.51137085503748% 70.06678698144941%;
+    }
+
+    .icon--item-l-acc-goods-scarf-stole {
+      width: 24.096px;
+      height: 24.094px;
+      background-position: 12.75568542751874% 70.06678698144941%;
+    }
+
+    .icon--item-l-acc-goods-tights-socks {
+      width: 24.096px;
+      height: 24.094px;
+      background-position: 0 70.06678698144941%;
+    }
+
+    .icon--item-l-bottoms {
+      width: 24.096px;
+      height: 24.094px;
+      background-position: 61.65618515224665% 29.580248732397823%;
+    }
+
+    .icon--item-l-dress {
+      width: 24.096px;
+      height: 24.094px;
+      background-position: 61.65618515224665% 14.790124366198912%;
+    }
+
+    .icon--item-l-outer {
+      width: 24.096px;
+      height: 24.094px;
+      background-position: 61.65618515224665% 0;
+    }
+
+    .icon--item-l-shoes-boots {
+      width: 24.096px;
+      height: 24.094px;
+      background-position: 38.26705628255622% 55.27666261525052%;
+    }
+
+    .icon--item-l-shoes-pumps {
+      width: 24.096px;
+      height: 24.094px;
+      background-position: 25.51137085503748% 55.27666261525052%;
+    }
+
+    .icon--item-l-shoes-rainshoes {
+      width: 24.096px;
+      height: 24.094px;
+      background-position: 12.75568542751874% 55.27666261525052%;
+    }
+
+    .icon--item-l-shoes-sandales {
+      width: 24.096px;
+      height: 24.094px;
+      background-position: 0 55.27666261525052%;
+    }
+
+    .icon--item-l-shoes-sneakers {
+      width: 24.096px;
+      height: 24.094px;
+      background-position: 48.437301486469316% 29.580248732397823%;
+    }
+
+    .icon--item-l-tops {
+      width: 24.096px;
+      height: 24.094px;
+      background-position: 48.437301486469316% 14.790124366198912%;
+    }
+
+    .icon--item-l-umbrella {
+      width: 24.096px;
+      height: 24.094px;
+      background-position: 25.51137085503748% 84.85691134764832%;
     }
 
     .icon--like {
       width: 20px;
       height: 20px;
-      background-position: 0 100%;
-    }
-
-    .icon--logo {
-      width: 228px;
-      height: 54px;
-      background-position: 0 0;
-    }
-
-    .icon--logo-xs {
-      width: 138px;
-      height: 34px;
-      background-position: 0 72.97297297297297%;
+      background-position: 22.84715025906736% 97.20419161676647%;
     }
 
     .icon--menu {
       width: 20px;
       height: 20px;
-      background-position: 9.615384615384615% 100%;
+      background-position: 33.20984455958549% 97.20419161676647%;
     }
 
     .icon--search {
       width: 20px;
       height: 20px;
-      background-position: 19.23076923076923% 100%;
+      background-position: 43.57253886010363% 97.20419161676647%;
     }
 
     .icon--user {
       width: 20px;
       height: 20px;
-      background-position: 28.846153846153847% 100%;
+      background-position: 53.93523316062176% 97.20419161676647%;
     }

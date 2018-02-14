@@ -37,3 +37,10 @@
     border: 1px solid rgba(152,166,173,.3);
     outline: none;
 }
+
+
+@media (min-width: 768px) {
+  .search {
+    margin-bottom: 2rem;
+  }
+}

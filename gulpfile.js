@@ -14,7 +14,7 @@ requireDir('./gulp/tasks', {recurse: true});
 gulp.task('browser-sync',  () =>  {
     browserSync({
         server: {
-            baseDir: "src/",
+            baseDir: "dist/",
             index  : "index.html"
         }
     });
@@ -26,7 +26,7 @@ gulp.task('bs-reload', () =>  {
 
 gulp.task('default', ['browser-sync'],  () =>  {
     gulp.watch([config.templates, config.dataPath], ['compileHtml']);
-    gulp.watch(['./src/**/*.js'], ['webpack']);
+    // gulp.watch(['./src/**/*.js'], ['webpack']);
     gulp.watch(["src/assets/svg/original/*.svg"], ['sprite']);
     gulp.watch("src/*.html", ['bs-reload']);
     gulp.watch("src/styles/*.sass", ['bs-reload']);

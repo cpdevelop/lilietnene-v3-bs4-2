@@ -3,7 +3,17 @@
   <div class="row">
     {{#each index.brands}}
       <div class="col-lg-2 col-md-4 col-6 grid__item">
-        <a href="{{url}}"><img class="img-fluid mx-auto" src="{{img}}" alt="{{name}}"></a>
+        <a href="{{url}}">
+          <picture>
+            <!--[if IE 9]><video style="display: none"><![endif]-->
+            <source media="(min-width: 1280px)" srcset="assets/images/brands-pic-{{img}}-1280.jpg 1x, assets/images/brands-pic-{{img}}-1280-2x.jpg 2x">
+            <source media="(min-width: 1024px)" srcset="assets/images/brands-pic-{{img}}-1024.jpg 1x, assets/images/brands-pic-{{img}}-1024-2x.jpg 2x">
+            <source media="(min-width: 640px)" srcset="assets/images/brands-pic-{{img}}-640.jpg 1x, assets/images/brands-pic-{{img}}-640-2x.jpg 2x">
+            <source media="(min-width: 320px)" srcset="assets/images/brands-pic-{{img}}-320.jpg 1x, assets/images/brands-pic-{{img}}-320-2x.jpg 2x">
+            <!--[if IE 9]></video><![endif]-->
+            <img class="img-fluid mx-auto lazyload" src="assets/images/brands-pic-{{img}}-640.jpg" alt="{{alt}}">
+          </picture>
+        </a>
       </div>
     {{/each}}
     <p class="grid__link"><a href="#" class="btn-link">取り扱いブランド一覧へ</a></p>

@@ -1,0 +1,9 @@
+$m-custum: .75rem;
+$letter-spacing-custum: .1rem;
+
+@mixin boxwithBgcolor(
+  $bgcolor: $l-lightgray, $padding: 2rem 2rem .5rem 2rem, $mb: 1.5rem) {
+  background-color: $bgcolor;
+  padding: $padding;
+  margin-bottom: $mb;
+}

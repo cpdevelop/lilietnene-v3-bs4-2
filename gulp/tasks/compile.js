@@ -6,15 +6,18 @@ const fs = require("fs");
 const regexRename = require('gulp-regex-rename');
 const replace = require('gulp-replace');
 
+gulp.task('copy',  () => {
+    gulp.src('src/*.html')
+        .pipe(gulp.dest('./dist'));
+});
+
 gulp.task('compileHtml', () => {
 	const templateData = {
 		},
 	options = {
 			batch : [config.templatePartialPath],
 			helpers : {
-            // capitals : (str) => {
-            //     return str.toUpperCase();
-            // }
+
         }
 		};
 
@@ -28,8 +31,9 @@ gulp.task('compileHtml', () => {
 		.pipe(gulp.dest(config.templateOutputPath));
 });
 
-// gulp.task('compileHtml');
 
+
+// gulp.task('compileHtml');
 //
 // http://www.timcodes.net/blog/2017/1/22/front-end-templates
 //

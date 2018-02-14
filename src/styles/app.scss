@@ -14,12 +14,15 @@
 // font-awesome icons from node-modules
 // ///////////////////////////////////
 
-$fa-font-path:        "assets/fonts";
+$fa-font-path: "assets/fonts";
 @import "../../node_modules/font-awesome/scss/font-awesome.scss";
 
 // ///////////////////////////////////
 // Additional StyleSheets
 // ///////////////////////////////////
+
+// Setting
+@import "modules/variables";
 
 // Function
 @import "modules/offcanvas";
@@ -31,17 +34,23 @@ $fa-font-path:        "assets/fonts";
 @import "modules/header";
 @import "modules/footer";
 @import "modules/toolbar";
-@import "modules/menu";
+@import "modules/nav";
 @import "modules/contents";
 @import "modules/grid";
-@import "modules/withwidget";
+@import "modules/widget";
+@import "modules/faq";
 @import "modules/tab";
+@import "modules/column";
+@import "modules/category";
+@import "modules/hero";
 
 // Modules & Parts
+@import "modules/collapse";
 @import "modules/sprite";
 @import "modules/buttons";
 @import "modules/title";
 @import "modules/search";
+@import "modules/texticon";
 
 // Effects
 @import "modules/animation";

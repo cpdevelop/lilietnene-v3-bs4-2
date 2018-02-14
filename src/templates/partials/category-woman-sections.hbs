@@ -1,0 +1,41 @@
+<div class="col-lg-8 col-md-7 col-12">
+  <h3 class="aside__title">FEATURED BRANDS</h3>
+  <div class="bgwrap">
+    {{#each woman.hero}}
+      <a href="{{url}}">
+        <div class="bgwrap__inner category__hero {{class}}" >
+          <h3 class="{{class}}__title">{{title}}<small>{{brand}}</small></h3>
+          <picture>
+            <!--[if IE 9]><video style="display: none"><![endif]-->
+            <source media="(min-width: 1280px)" srcset="assets/images/hero-pic-{{img}}.jpg 1x, assets/images/hero-pic-{{img}}.jpg 2x"><!---1280-2x-->
+            <source media="(min-width: 1024px)" srcset="assets/images/hero-pic-{{img}}.jpg 1x, assets/images/hero-pic-{{img}}.jpg 2x"><!--1024-2x-->
+            <source media="(min-width: 640px)" srcset="assets/images/hero-pic-{{img}}.jpg 1x, assets/images/hero-pic-{{img}}.jpg 2x"><!---640-2x-2x-->
+            <source media="(min-width: 320px)" srcset="assets/images/hero-pic-{{img}}.jpg 1x, assets/images/hero-pic-{{img}}.jpg 2x"><!---320-2x-->
+            <!--[if IE 9]></video><![endif]-->
+            <img src="assets/images/hero-pic-{{img}}.jpg" class="bgwrap__innerimg lazyload" alt="{{alt}}">
+          </picture>
+        </div>
+      </a>
+    {{/each}}
+  </div>
+  <div class="row">
+    {{#each woman.brand}}
+    <div class="col-lg-4 col-md-6 col-6 grid__item">
+      <span class="badge badge-dark grid__badge">{{current}}</span>
+      <a href="{{url}}">
+        <picture>
+          <!--[if IE 9]><video style="display: none"><![endif]-->
+          <source media="(min-width: 1280px)" srcset="assets/images/pic-{{img}}-1280.jpg 1x, assets/images/pic-{{img}}-1280-2x.jpg 2x">
+          <source media="(min-width: 1024px)" srcset="assets/images/pic-{{img}}-1024.jpg 1x, assets/images/pic-{{img}}-1024-2x.jpg 2x">
+          <source media="(min-width: 640px)" srcset="assets/images/pic-{{img}}-640.jpg 1x, assets/images/pic-{{img}}-640-2x.jpg 2x">
+          <source media="(min-width: 320px)" srcset="assets/images/pic-{{img}}-320.jpg 1x, assets/images/pic-{{img}}-320-2x.jpg 2x">
+          <!--[if IE 9]></video><![endif]-->
+          <img src="assets/images/pic-{{img}}-320.jpg" class="card-img-top lazyload" alt="{{alt}}">
+        </picture>
+        <h2>{{name}}</h2>
+        <p>{{description}}</p>
+      </a>
+    </div>
+    {{/each}}
+  </div>
+</div>

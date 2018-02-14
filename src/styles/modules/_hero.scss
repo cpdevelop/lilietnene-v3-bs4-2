@@ -1,0 +1,131 @@
+.comingsoon,
+.newarrivals
+ {
+  text-align: center;
+
+  &__title {
+    font-size: 1rem;
+    letter-spacing: .05rem;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+    small {
+      font-weight: 100;
+      margin-top: .3rem;
+      font-size: .8rem;
+      margin-left: .75rem;
+    }
+  }
+
+  &__timer {
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+
+    li {
+      display: inline-block;
+      width: 2.5rem;
+      line-height: 1.2;
+
+      span {
+        display: block;
+        font-size: 1.2rem;
+        letter-spacing: .05rem;
+      }
+      small {
+        font-size: .7rem;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+
+@media (min-width: 768px) {
+
+    .comingsoon__title,
+    .newarrivals__title {
+      font-size: 1.25rem;
+      margin-top: 2.5rem;
+      font-weight: 100;
+
+      small {
+        margin-top: .5rem;
+        font-size: .9rem;
+        margin-left: .75rem;
+      }
+    }
+
+    .comingsoon__timer {
+      li {
+        width: 3rem;
+        span {
+          font-size: 1.5rem;
+        }
+        small {
+          font-size: .9rem;
+        }
+      }
+    }
+  }
+
+
+@media (min-width: 992px) {
+
+  .comingsoon__title,
+  .newarrivals__title {
+    font-size: 2.2rem;
+    margin-top: 4rem;
+
+    small {
+      display: block;
+      margin-top: .75rem;
+      font-size: 1.4rem;
+    }
+  }
+
+  .comingsoon__timer {
+      li {
+        width: 4rem;
+
+        span {
+          font-size: 2rem;
+        }
+        small {
+          font-size: .9rem;
+        }
+      }
+    }
+}
+
+
+.bgwrap {
+    position: relative;
+    width: 100%;
+    margin-bottom: 2rem;
+
+    &:before {
+        content:"";
+        display: block;
+        padding-top: 100%;
+    }
+    &__inner {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+    }
+
+    &__innerimg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      z-index: -1;
+    }
+
+}

@@ -1,0 +1,138 @@
+.site-menu {
+  text-align: center;
+  z-index: 1;
+  position: relative;
+  margin-top: 25px;
+  text-transform:uppercase;
+
+  .newin:before {
+      content: "";
+      display: block;
+      position: absolute;
+      height: .4rem;
+      width: .4rem;
+      border-radius: .5rem;
+      background: #ffcc66;
+      margin-top: -.275rem;
+      margin-left: -.275rem;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+}
+
+.has-megamenu,
+.has-submenu {
+  display: inline-block;
+  a {
+      cursor: pointer;
+      padding-bottom: 20px;
+  }
+}
+
+.has-submenu {
+  position: relative;
+}
+
+// Display with Hover
+.sub-menu,
+.mega-menu {
+  display: none;
+  position: absolute;
+  top:45px;
+  left: 0;
+  padding: 30px 40px;
+  border: 1px solid #efefef;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 7px 22px -5px rgba(47,56,68,0.2);
+  z-index: 2;
+  text-align: left;
+  font-size: .8rem;
+  letter-spacing: .05rem;
+
+  h3 {
+    font-size: .7rem;
+    font-weight: 800;
+  }
+
+  a {
+    margin-right: .5rem;
+    padding: 0 0 .5rem;
+    text-decoration: none;
+    display: block;
+  }
+
+  a::after{
+    font: normal normal normal 14px/1 FontAwesome;
+    content: "\f105";
+    float: right;
+  }
+
+  hr {
+    border: none;
+  }
+}
+
+.sub-menu {
+    min-width: 300px;
+}
+
+.mega-menu {
+    width: 100%;
+}
+
+.has-megamenu:hover .nav-link,
+.has-submenu:hover .nav-link {
+  position: relative;
+}
+
+.has-megamenu:hover .nav-link::before,
+.has-submenu:hover .nav-link::before {
+  content: "";
+  position: absolute;
+  top:38px;
+  left: 50%;
+  transform: translatex(-50%);
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 20px 20px 20px;
+  border-color: transparent transparent #e8e8e8 transparent;
+  z-index: 1;
+}
+
+.has-megamenu:hover .nav-link::after,
+.has-submenu:hover .nav-link::after {
+  content: "";
+  position: absolute;
+  top:39px;
+  left: 50%;
+  transform: translatex(-50%);
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 20px 20px 20px;
+  border-color: transparent transparent #fff transparent;
+  z-index: 3;
+}
+
+.has-megamenu:hover .mega-menu,
+.has-submenu:hover .sub-menu {
+    display: block;
+}
+
+
+nav {
+  .nav-link {
+    font-weight: 400;
+    font-size: .85rem;
+    letter-spacing: .1rem;
+    color: #5a5452;
+    font-family: initial;
+  }
+}

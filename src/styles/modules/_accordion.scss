@@ -28,6 +28,19 @@
     }
   }
 
+  .accordion-menu-item a[data-toggle="collapse"].collapsed::after {
+      font: normal normal normal 14px/1 FontAwesome;
+      content: "\f105";/* chevron-down */
+      float: right;
+      line-height: inherit;
+  }
+  .accordion-menu-item a[data-toggle="collapse"]::after {
+      font: normal normal normal 14px/1 FontAwesome;
+      content: "\f105";/* chevron-up */
+      float: right;
+      line-height: inherit;
+    }
+
   .fa {
     margin: 0 .75rem 0 0;
     display: inline;

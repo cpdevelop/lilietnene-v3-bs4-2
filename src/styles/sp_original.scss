@@ -14,23 +14,39 @@
 // Additional StyleSheets
 // ///////////////////////////////////
 
+// Setting
+@import "modules/variables";
+
 // Function
 @import "modules/offcanvas";
 @import "modules/accordion";
+@import "modules/carousel";
+@import "modules/pagetop";
+
 
 // Block
 @import "modules/header";
 @import "modules/footer";
 @import "modules/toolbar";
-@import "modules/menu";
+@import "modules/nav";
+@import "modules/contents";
+@import "modules/grid";
+@import "modules/widget";
+@import "modules/faq";
+@import "modules/tab";
+@import "modules/column";
 
 // Modules & Parts
+@import "modules/collapse";
 @import "modules/sprite";
 @import "modules/buttons";
+@import "modules/title";
 @import "modules/search";
+@import "modules/texticon";
 
 // Effects
 @import "modules/animation";
+
 
 // for future-shop
 
@@ -469,4 +485,15 @@ input[type="button"] {
 
 #fs2_prefecture {
     margin-bottom: 15px;
+}
+
+.fs_goods_container {
+    position: relative;
+}
+
+.FS2_eye_catch_icon {
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    width: 2.2rem;
 }

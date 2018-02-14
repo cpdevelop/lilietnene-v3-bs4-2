@@ -14,26 +14,48 @@
 // Additional StyleSheets
 // ///////////////////////////////////
 
+// Setting
+@import "modules/variables";
+
 // Function
 @import "modules/offcanvas";
 @import "modules/accordion";
+@import "modules/carousel";
+@import "modules/pagetop";
 
 // Block
 @import "modules/header";
 @import "modules/footer";
 @import "modules/toolbar";
-@import "modules/menu";
+@import "modules/nav";
+@import "modules/contents";
+@import "modules/grid";
+@import "modules/widget";
+@import "modules/faq";
+@import "modules/tab";
+@import "modules/column";
 
 // Modules & Parts
+@import "modules/collapse";
 @import "modules/sprite";
 @import "modules/buttons";
+@import "modules/title";
 @import "modules/search";
+@import "modules/texticon";
 
 // Effects
 @import "modules/animation";
 
-// for future-shop
 
+// reset
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+
+// for future-shop
+.FS2_bottom_btn_info input[type=image]
 .FS2_trial, .FS2_preview {
   display: none;
 }
@@ -200,12 +222,17 @@ input[type="radio"], input[type="checkbox"] {
   }
 }
 
-.alignItem_03 {
+.alignItem_01
+.alignItem_03,
+.alignItem_04,
+.alignItem_05,
+.alignItem_06 {
   display: flex;
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
 }
+
 .FS2_bottom_btn_center_1,
 .FS2_bottom_btn_info {
   text-align: center;
@@ -259,4 +286,36 @@ div.FS2_bottom_btn_info > a > img,#form > .FS2_bottom_btn_center_1 > a > img {
 
 .FS2_login_layout_table_td_left > div > table > caption {
   display: none;
+}
+
+
+/* items list */
+
+.FS2_eye_catch_icon {
+    position: absolute;
+    top: 0;
+    width: 2.75rem;
+
+    img {
+    width: 100%;
+  }
+}
+
+/* items */
+
+.FS2_body_Goods_GoodsDetail .itemTitle {
+    padding-top: 35px;
+}
+
+.GoodsSelectionTable td, .table th {
+    border: 1px solid #ebe9e7;
+  }
+
+.itemStock {
+      border: none;
+  }
+
+.FS2_TweetButton_area dd {
+  display: inline-block;
+  margin-right: .75rem;
 }

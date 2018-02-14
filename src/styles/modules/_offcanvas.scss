@@ -18,13 +18,6 @@ footer {
 .row-offcanvas {
   position: relative;
   transition: all .25s ease-out;
-
-  hr {
-    margin: 1.5rem -25px;
-    border: 0;
-    border-top: 2px solid rgba(0, 0, 0, 0.05);
-  }
-
 }
 
 .row-offcanvas-right {
@@ -87,6 +80,13 @@ footer {
   /*height:100vh;*/
   padding: 25px 10px;
   display: none;
+
+  hr {
+    margin: 1.5rem -25px;
+    border: 0;
+    border-top: 2px solid rgba(0, 0, 0, 0.05);
+  }
+  
   @media screen and (min-width: 768px) and (max-width: 991px) {
       width: 50%;
   }

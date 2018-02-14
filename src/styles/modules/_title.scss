@@ -2,6 +2,8 @@
   text-align: center;
   margin: 3rem 0 2rem;
   letter-spacing:$letter-spacing-custum;
+  font-size: 1.2rem;
+  font-weight: 400;
 
   small {
     font-size: 60%;
@@ -10,10 +12,17 @@
   }
 }
 
+.aside__title {
+  display: none;
+}
+
+
+
 @media (min-width: 768px) {
   .page__title {
     text-align: center;
-    margin: 6rem 0 3rem;
+    font-size: 1.6rem;
+    margin: 5rem 0 3rem;
 
     small {
       margin-top: 0;
@@ -21,4 +30,13 @@
       display:inline;
     }
   }
+
+  .aside__title {
+    letter-spacing:$letter-spacing-custum;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    display: block;
+  }
+
 }

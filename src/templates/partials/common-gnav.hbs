@@ -1,0 +1,176 @@
+<nav class="container site-menu d-none d-lg-block">
+<ul class="nav justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link active" href="index.html">Top</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/fs/lilietnene/c/newitems">New</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="brands.html" role="button">Brands</a>
+    </li>
+    <li class="nav-item has-megamenu d-none d-lg-block">
+      <a class="nav-link" href="baby.html" role="button">Baby</a>
+      <div class="mega-menu">
+          <div class="row">
+            <div class="col-md-3">
+              <h3>アイテムで探す</h3>
+              {{#each nav.baby-items}}
+                <a href="{{url}}">{{name}}</a>
+              {{/each}}
+            </div>
+            <div class="col-md-3">
+              <h3>サイズで探す</h3>
+              {{#each nav.baby-size}}
+                <a href="{{url}}">{{size}}</a>
+              {{/each}}
+            </div>
+            <div class="col-md-3">
+              <h3>ブランド</h3>
+              {{#each nav.baby-brand}}
+                <a href="{{url}}">{{name}}{{#if current}}<span class="current">{{current}}</span>{{/if}}</a>
+              {{/each}}
+            </div>
+            <div class="col-md-3">
+              <h3>グッズ＆ギフト</h3>
+              {{#each nav.baby-goods}}
+                <a href="{{url}}">{{name}}</a>
+              {{/each}}
+            </div>
+          </div>
+        </div><!-- ./mega-menu -->
+    </li>
+    <li class="nav-item has-megamenu d-none d-lg-block">
+      <a class="nav-link" href="kids.html" role="button">Kids</a>
+      <div class="mega-menu">
+          <div class="row">
+            <div class="col-md-3">
+              <h3>アイテムで探す</h3>
+              {{#each nav.kids-items}}
+                <a href="{{url}}">{{name}}</a>
+              {{/each}}
+            </div>
+            <div class="col-md-3">
+              <h3>サイズで探す</h3>
+              {{#each nav.kids-size}}
+                <a href="{{url}}">{{size}}</a>
+              {{/each}}
+            </div>
+            <div class="col-md-3">
+              <h3>ブランド</h3>
+              {{#each nav.kids-brand}}
+                <a href="{{url}}">{{name}}{{#if current}}<span class="current">{{current}}</span>{{/if}}</a>
+              {{/each}}
+            </div>
+            <div class="col-md-3">
+              <h3>グッズ＆ギフト</h3>
+              {{#each nav.kids-goods}}
+                <a href="{{url}}">{{name}}</a>
+              {{/each}}
+            </div>
+          </div>
+        </div><!-- ./mega-menu -->
+    </li>
+    <li class="nav-item has-megamenu d-none d-lg-block">
+      <a class="nav-link"  href="woman.html" role="button">WOMAN</a>
+      <div class="mega-menu">
+          <div class="row">
+            <div class="col-md-3">
+              <h3>アイテムで探す</h3>
+              {{#each nav.woman-items}}
+                <a href="{{url}}">{{name}}</a>
+              {{/each}}
+            </div>
+            <div class="col-md-3">
+              <h3>ブランド</h3>
+              {{#each nav.woman-brand1}}
+                <a href="{{url}}">{{name}}{{#if current}}<span class="current">{{current}}</span>{{/if}}</a>
+              {{/each}}
+            </div>
+            <div class="col-md-3">
+              <hr />
+              {{#each nav.woman-brand2}}
+                <a href="{{url}}">{{name}}{{#if current}}<span class="current">{{current}}</span>{{/if}}</a>
+              {{/each}}
+            </div>
+            <div class="col-md-3">
+              <h3>グッズ＆ギフト</h3>
+              {{#each nav.woman-goods}}
+                <a href="{{url}}">{{name}}</a>
+              {{/each}}
+            </div>
+          </div>
+        </div><!-- ./mega-menu -->
+    </li>
+    <li class="nav-item has-megamenu d-none d-lg-block">
+      <a class="nav-link" href="#" role="button">Home & Design</a>
+      <div class="mega-menu">
+          <div class="row">
+            <div class="col-md-3">
+              <h3>アイテムで探す</h3>
+              {{#each nav.goods-items1}}
+                <a href="{{url}}">{{name}}</a>
+              {{/each}}
+            </div>
+            <div class="col-md-3">
+              <hr />
+              {{#each nav.goods-items2}}
+                <a href="{{url}}">{{name}}</a>
+              {{/each}}
+            </div>
+            <div class="col-md-3">
+              <h3>ブランド</h3>
+              {{#each nav.goods-brands}}
+                <a href="{{url}}">{{name}}</a>
+              {{/each}}
+            </div>
+            <div class="col-md-3">
+              <h3>おもちゃ</h3>
+              {{#each nav.goods-toy}}
+                <a href="{{url}}">{{name}}</a>
+              {{/each}}
+            </div>
+          </div>
+        </div><!-- ./mega-menu -->
+    </li>
+    <li class="nav-item has-submenu d-none d-lg-block">
+      <a class="nav-link" href="#" role="button">Gifts</a>
+      <div class="sub-menu">
+          <div class="row">
+            <div class="col">
+              <h3>相手やシーンで探す</h3>
+              {{#each nav.gifts-personality}}
+                <a href="{{url}}">{{name}}</a>
+              {{/each}}
+              <h3 class="mt-3">ギフトセット</h3>
+              {{#each nav.gifts-set}}
+                <a href="{{url}}">{{name}}</a>
+              {{/each}}
+              <h3 class="mt-3">ご予算で選ぶ出産祝い</h3>
+              {{#each nav.gifts-budget}}
+                <a href="{{url}}">{{name}}</a>
+              {{/each}}
+            </div>
+          </div>
+      </div><!-- ./sub-menu -->
+    </li>
+    <li class="nav-item has-submenu d-none d-lg-block">
+      <a class="nav-link" href="#" role="button">Sale</a>
+      <div class="sub-menu">
+          <div class="row">
+            <div class="col">
+              <h3>SEASON</h3>
+              {{#each nav.sale-season}}
+                <a href="{{url}}">{{name}}</a>
+              {{/each}}
+              <h3 class="mt-3">CATEGORY</h3>
+              {{#each nav.sale-category}}
+                <a href="{{url}}">{{name}}</a>
+              {{/each}}
+              <a href="/fs/lilietnene/c/outletsale75">OUTLET</a>
+            </div>
+          </div>
+      </div><!-- ./sub-menu -->
+    </li>
+  </ul>
+</nav>

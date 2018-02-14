@@ -1,6 +1,3 @@
-$m-custum: .75rem;
-$letter-spacing-custum: .1rem;
-
 // stylelint-disable
 // custum gray
 $gray-100: #f9f8f7;
@@ -64,6 +61,7 @@ $h3-font-size:                $font-size-base * 1.3;
 $h4-font-size:                $font-size-base * 1.2;
 $h5-font-size:                $font-size-base * 1.1;
 $h6-font-size:                $font-size-base !default;
+$headings-margin-bottom:.75rem;
 
 // Links
 //
@@ -101,3 +99,6 @@ $btn-border-radius:0;
 // card
 $card-border-radius:0;
 $card-inner-border-radius:0;
+
+// carousel
+$carousel-caption-color: $l-black;

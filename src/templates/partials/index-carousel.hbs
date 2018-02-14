@@ -7,9 +7,19 @@
     			<div class="carousel-inner">
             {{#each index.carousel}}
               <div class="carousel-item {{class}}">
-                <img class="{{count}}" src="{{img}}" alt="{{alt}}" data-src="{{data-src}}" data-holder-rendered="true">
+								<a href="{{url}}">
+									<picture>
+				            <!--[if IE 9]><video style="display: none"><![endif]-->
+				            <source media="(min-width: 1280px)" srcset="assets/images/carousel-pic-{{img}}-1280.jpg 1x, assets/images/carousel-pic-{{img}}-1280-2x.jpg 2x">
+				            <source media="(min-width: 1024px)" srcset="assets/images/carousel-pic-{{img}}-1280.jpg 1x, assets/images/carousel-pic-{{img}}-1280-2x.jpg 2x">
+				            <source media="(min-width: 640px)" srcset="assets/images/carousel-pic-{{img}}-640.jpg 1x, assets/images/carousel-pic-{{img}}-640-2x.jpg 2x">
+				            <source media="(min-width: 320px)" srcset="assets/images/carousel-pic-{{img}}-320.jpg 1x, assets/images/carousel-pic-{{img}}-320-2x.jpg 2x">
+				            <!--[if IE 9]></video><![endif]-->
+										<img class="carousel-img {{count}}" src="assets/images/carousel-pic-{{img}}-1280.jpg" data-src="{{img}}" alt="{{alt}}" data-holder-rendered="true">
+				          </picture>
+								</a>
                 <div class="container">
-                  <div class="carousel-caption">
+                  <div class="carousel-caption text-{{position}}">
                     <h1>{{title}}</h1>
                     <p>{{summary}}</p>
                     <p><a class="btn btn-light-extended" href="{{url}}" role="button">VIEW MORE</a></p>
