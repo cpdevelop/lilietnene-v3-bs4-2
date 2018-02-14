@@ -1,5 +1,6 @@
 dist
 node_modules
+src/assets/images
 src/*.html
 src/styles/*.css
 src/styles/*.map
